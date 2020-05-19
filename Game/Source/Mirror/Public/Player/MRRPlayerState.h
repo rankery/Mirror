@@ -19,17 +19,12 @@ class MIRROR_API AMRRPlayerState : public APlayerState, public IAbilitySystemInt
 public:
 	AMRRPlayerState();
 
-	// IAbilitySystemInterface implementation
 	class UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
 	class UMRRAttributeSetBase* GetAttributeSetBase() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState")
 	bool IsAlive() const;
-
-	/**
-	* Getters for attributes from GDAttributeSetBase. Returns Current Value unless otherwise specified.
-	*/
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes")
 	float GetHealth() const;
@@ -69,10 +64,8 @@ protected:
 	FDelegateHandle ArmorChangedDelegateHandle;
 	FDelegateHandle GoldChangedDelegateHandle;
 
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	// Attribute changed callbacks
 	virtual void HealthChanged(const FOnAttributeChangeData& Data);
 	virtual void MaxHealthChanged(const FOnAttributeChangeData& Data);
 	virtual void HealthRegenRateChanged(const FOnAttributeChangeData& Data);
@@ -81,6 +74,5 @@ protected:
 	virtual void ArmorChanged(const FOnAttributeChangeData& Data);
 	virtual void GoldChanged(const FOnAttributeChangeData& Data);
 
-	// Tag change callbacks
 	virtual void StunTagChanged(const FGameplayTag CallbackTag, int32 NewCount);
 };

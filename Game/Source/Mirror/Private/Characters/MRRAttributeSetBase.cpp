@@ -10,7 +10,6 @@
 
 UMRRAttributeSetBase::UMRRAttributeSetBase()
 {
-	// Cache tags
 	HitDirectionFrontTag = FGameplayTag::RequestGameplayTag(FName("Effect.HitReact.Front"));
 	HitDirectionBackTag = FGameplayTag::RequestGameplayTag(FName("Effect.HitReact.Back"));
 	HitDirectionRightTag = FGameplayTag::RequestGameplayTag(FName("Effect.HitReact.Right"));
@@ -20,7 +19,7 @@ UMRRAttributeSetBase::UMRRAttributeSetBase()
 void UMRRAttributeSetBase::PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue)
 {
 	Super::PreAttributeChange(Attribute, NewValue);
-	if (Attribute == GetMaxHealthAttribute()) // GetMaxHealthAttribute comes from the Macros defined at the top of the header
+	if (Attribute == GetMaxHealthAttribute()) 
 	{
 		AdjustAttributeForMaxChange(Health, MaxHealth, NewValue, GetHealthAttribute());
 	}else if (Attribute == GetMaxWeightAttribute())
@@ -28,7 +27,6 @@ void UMRRAttributeSetBase::PreAttributeChange(const FGameplayAttribute& Attribut
 		AdjustAttributeForMaxChange(Weight, MaxWeight, NewValue, GetWeightAttribute());
 	}
 }
-
 
 void UMRRAttributeSetBase::PostGameplayEffectExecute(const FGameplayEffectModCallbackData& Data)
 {
@@ -55,14 +53,12 @@ void UMRRAttributeSetBase::AdjustAttributeForMaxChange(FGameplayAttributeData& A
 	const float CurrentMaxValue = MaxAttribute.GetCurrentValue();
 	if (!FMath::IsNearlyEqual(CurrentMaxValue, NewMaxValue) && AbilityComp)
 	{
-		// Change current value to maintain the current Val / Max percent
 		const float CurrentValue = AffectedAttribute.GetCurrentValue();
 		float NewDelta = (CurrentMaxValue > 0.f) ? (CurrentValue * NewMaxValue / CurrentMaxValue) - CurrentValue : NewMaxValue;
 
 		AbilityComp->ApplyModToAttributeUnsafe(AffectedAttributeProperty, EGameplayModOp::Additive, NewDelta);
 	}
 }
-
 
 void UMRRAttributeSetBase::OnRep_Health()
 {

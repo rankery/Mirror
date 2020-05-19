@@ -14,9 +14,6 @@ class MIRROR_API UMRRHUDWidget : public UUserWidget
 {
 	GENERATED_BODY()
 public:
-		/**
-		* Attribute setters
-		*/
 		UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 		void SetMaxHealth(float MaxHealth);
 
