@@ -1,0 +1,2 @@
+D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\Definitions.Mirror.h
+D:\Games\Mirror\Game\Source\Mirror\Mirror.h

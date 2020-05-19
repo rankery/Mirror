@@ -1,0 +1,1326 @@
+﻿Log file open, 05/16/20 19:47:27
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: Mirror
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 11 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.185874
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +3:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MegascansPlugin
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GameplayAbilities
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ReplicationGraph
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin SpatialGDK
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.24-CL-0
+LogInit: Engine Version: 4.24.3-0+++UE4+Release-4.24
+LogInit: Compatible Engine Version: 4.24.0-0+++UE4+Release-4.24
+LogInit: Net CL: 0
+LogInit: OS: Windows 10 (Release 1909) (), CPU: Intel(R) Pentium(R) CPU 4405U @ 2.10GHz, GPU: Intel(R) HD Graphics 510
+LogInit: Compiled (64-bit): May 12 2020 21:19:45
+LogInit: Compiled with Visual C++: 19.25.28614.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.24
+LogInit: Command Line: 
+LogInit: Base Directory: D:/Unreal Source/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 25
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 37
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 36
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 2
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 36
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 8
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 9
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 8
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/Games/Mirror/Game/Saved/Config/Windows/Engine.ini]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/Games/Mirror/Game/Saved/Config/Windows/Engine.ini]
+[2020.05.16-16.47.28:102][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Games/Mirror/Game/Saved/Config/Windows/Engine.ini]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.05.16-16.47.28:102][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/Games/Mirror/Game/Saved/Config/Windows/Engine.ini]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.05.16-16.47.28:103][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/Games/Mirror/Game/Saved/Config/Windows/Engine.ini]
+[2020.05.16-16.47.28:103][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/Games/Mirror/Game/Saved/Config/Windows/Engine.ini]
+[2020.05.16-16.47.28:109][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.05.16-16.47.28:109][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.05.16-16.47.28:109][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.05.16-16.47.28:109][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.05.16-16.47.28:110][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.05.16-16.47.28:111][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.05.16-16.47.28:112][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:112][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.05.16-16.47.28:112][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.05.16-16.47.28:112][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.05.16-16.47.28:112][  0]LogInit: Selected Device Profile: [Windows]
+[2020.05.16-16.47.28:112][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.05.16-16.47.28:124][  0]LogHAL: Display: Platform has ~ 8 GB [8467349504 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.05.16-16.47.28:124][  0]LogInit: Going up to parent DeviceProfile []
+[2020.05.16-16.47.28:124][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:124][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.05.16-16.47.28:124][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.05.16-16.47.28:124][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.05.16-16.47.28:125][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.05.16-16.47.28:126][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.05.16-16.47.28:127][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.05.16-16.47.28:127][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.05.16-16.47.28:127][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.05.16-16.47.28:127][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.05.16-16.47.28:127][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.05.16-16.47.28:127][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:127][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.05.16-16.47.28:127][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.05.16-16.47.28:127][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Games/Mirror/Game/Saved/Config/Windows/Scalability.ini]
+[2020.05.16-16.47.28:127][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.05.16-16.47.28:127][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.05.16-16.47.28:127][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.05.16-16.47.28:127][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.05.16-16.47.28:136][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.05.16-16.47.28:136][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.05.16-16.47.28:136][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Games/Mirror/Game/Saved/Config/Windows/Engine.ini]
+[2020.05.16-16.47.28:136][  0]LogInit: Computer: DESKTOP-01EI2CD
+[2020.05.16-16.47.28:136][  0]LogInit: User: Dante
+[2020.05.16-16.47.28:136][  0]LogInit: CPU Page size=4096, Cores=2
+[2020.05.16-16.47.28:136][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.05.16-16.47.28:136][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2020.05.16-16.47.28:136][  0]LogMemory: Platform Memory Stats for Windows
+[2020.05.16-16.47.28:136][  0]LogMemory: Process Physical Memory: 94.76 MB used, 94.87 MB peak
+[2020.05.16-16.47.28:136][  0]LogMemory: Process Virtual Memory: 85.75 MB used, 85.75 MB peak
+[2020.05.16-16.47.28:136][  0]LogMemory: Physical Memory: 5270.20 MB used,  2804.90 MB free, 8075.09 MB total
+[2020.05.16-16.47.28:136][  0]LogMemory: Virtual Memory: 5087.32 MB used,  134212640.00 MB free, 134217728.00 MB total
+[2020.05.16-16.47.28:141][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.05.16-16.47.28:204][  0]LogInit: Using OS detected language (ru-RU).
+[2020.05.16-16.47.28:204][  0]LogInit: Using OS detected locale (ru-RU).
+[2020.05.16-16.47.28:207][  0]LogTextLocalizationManager: No specific localization for 'ru-RU' exists, so the 'ru' localization will be used.
+[2020.05.16-16.47.28:207][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Editor/ru/Editor.locres' could not be opened for reading!
+[2020.05.16-16.47.28:207][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/EditorTutorials/ru/EditorTutorials.locres' could not be opened for reading!
+[2020.05.16-16.47.28:208][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Keywords/ru/Keywords.locres' could not be opened for reading!
+[2020.05.16-16.47.28:208][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Category/ru/Category.locres' could not be opened for reading!
+[2020.05.16-16.47.28:209][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/ToolTips/ru/ToolTips.locres' could not be opened for reading!
+[2020.05.16-16.47.28:209][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/PropertyNames/ru/PropertyNames.locres' could not be opened for reading!
+[2020.05.16-16.47.28:209][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Engine/ru/Engine.locres' could not be opened for reading!
+[2020.05.16-16.47.28:211][  0]LogInit: Setting process to per monitor DPI aware
+[2020.05.16-16.47.28:320][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.05.16-16.47.28:320][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.05.16-16.47.28:820][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.05.16-16.47.28:820][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.05.16-16.47.28:820][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.05.16-16.47.28:821][  0]LogD3D11RHI: D3D11 adapters:
+[2020.05.16-16.47.29:387][  0]LogD3D11RHI:    0. 'NVIDIA GeForce 930MX' (Feature Level 11_0)
+[2020.05.16-16.47.29:387][  0]LogD3D11RHI:       2010/0/4037 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2020.05.16-16.47.29:414][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 510' (Feature Level 11_0)
+[2020.05.16-16.47.29:415][  0]LogD3D11RHI:       128/0/4037 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2020.05.16-16.47.29:423][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.05.16-16.47.29:423][  0]LogD3D11RHI:       0/0/4037 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.05.16-16.47.29:423][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.05.16-16.47.29:496][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.05.16-16.47.29:496][  0]LogD3D11RHI:     GPU DeviceId: 0x134e (for the marketing name, search the web for "GPU Device Id")
+[2020.05.16-16.47.29:496][  0]LogWindows: EnumDisplayDevices:
+[2020.05.16-16.47.29:497][  0]LogWindows:    0. 'Intel(R) HD Graphics 510' (P:1 D:1)
+[2020.05.16-16.47.29:497][  0]LogWindows:    1. 'Intel(R) HD Graphics 510' (P:0 D:0)
+[2020.05.16-16.47.29:497][  0]LogWindows:    2. 'Intel(R) HD Graphics 510' (P:0 D:0)
+[2020.05.16-16.47.29:498][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2020.05.16-16.47.29:498][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce 930MX
+[2020.05.16-16.47.29:498][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2020.05.16-16.47.29:498][  0]LogD3D11RHI:      Driver Date: Unknown
+[2020.05.16-16.47.29:498][  0]LogRHI: Texture pool is 1407 MB (70% of 2010 MB)
+[2020.05.16-16.47.29:566][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.05.16-16.47.29:566][  0]LogD3D11RHI: Async texture creation enabled
+[2020.05.16-16.47.29:585][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.05.16-16.47.30:012][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.05.16-16.47.30:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.05.16-16.47.30:110][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.05.16-16.47.30:110][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.05.16-16.47.30:123][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.05.16-16.47.30:135][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.05.16-16.47.30:146][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.05.16-16.47.30:158][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.05.16-16.47.30:170][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.05.16-16.47.30:181][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.05.16-16.47.30:218][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.05.16-16.47.30:218][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.05.16-16.47.30:238][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.05.16-16.47.30:238][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.05.16-16.47.30:250][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.05.16-16.47.30:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.05.16-16.47.30:280][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.05.16-16.47.30:292][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.05.16-16.47.30:311][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'XXX'
+[2020.05.16-16.47.30:311][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.05.16-16.47.30:323][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.05.16-16.47.30:381][  0]LogShaderCompilers: Guid format shader working directory is 16 characters bigger than the processId version (../../../../Games/Mirror/Game/Intermediate/Shaders/WorkingDirectory/11684/).
+[2020.05.16-16.47.30:381][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Dante/AppData/Local/Temp/UnrealShaderWorkingDir/431284A347FBB8CA46E99187A9A70199/'.
+[2020.05.16-16.47.30:383][  0]LogXGEController: Cleaning working directory: C:/Users/Dante/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.05.16-16.47.30:384][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.05.16-16.47.30:384][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.05.16-16.47.30:384][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.05.16-16.47.31:710][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.05.16-16.47.31:996][  0]LogDerivedDataCache: Loaded boot cache 0.29s 82MB ../../../../Games/Mirror/Game/DerivedDataCache/Boot.ddc.
+[2020.05.16-16.47.31:996][  0]LogDerivedDataCache: Display: Loaded Boot cache: ../../../../Games/Mirror/Game/DerivedDataCache/Boot.ddc
+[2020.05.16-16.47.31:996][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../Games/Mirror/Game/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.05.16-16.47.31:996][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.05.16-16.47.31:997][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnginePak pak cache file ../../../Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.05.16-16.47.31:997][  0]LogDerivedDataCache: Unable to find inner node EnginePak for hierarchical cache Hierarchy.
+[2020.05.16-16.47.31:998][  0]LogDerivedDataCache: Using Local data cache path ../../../Engine/DerivedDataCache: Writable
+[2020.05.16-16.47.31:998][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.05.16-16.47.31:998][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.05.16-16.47.32:056][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.05.16-16.47.32:060][  0]LogSlate: Using FreeType 2.10.0
+[2020.05.16-16.47.32:062][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.05.16-16.47.32:665][  0]LogAssetRegistry: FAssetRegistry took 0.0040 seconds to start up
+[2020.05.16-16.47.33:618][  0]LogInit: Selected Device Profile: [Windows]
+[2020.05.16-16.47.34:049][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.05.16-16.47.34:049][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.05.16-16.47.34:049][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.05.16-16.47.34:049][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.05.16-16.47.34:050][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.05.16-16.47.34:074][  0]LogNetVersion: Mirror 1.0.0, NetCL: 0, EngineNetVer: 13, GameNetVer: 0 (Checksum: 3659903844)
+[2020.05.16-16.47.34:162][  0]LogInput: Warning: Action ResetVR uses deprecated key MotionController_Left_Grip1.
+[2020.05.16-16.47.39:382][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_24x.png' error.
+[2020.05.16-16.47.39:382][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_24x.png
+[2020.05.16-16.47.39:382][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png' error.
+[2020.05.16-16.47.39:382][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png
+[2020.05.16-16.47.39:382][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png' error.
+[2020.05.16-16.47.39:382][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png
+[2020.05.16-16.47.40:818][  0]LogPackageLocalizationCache: Processed 13 localized package path(s) for 1 prioritized culture(s) in 0.108878 seconds
+[2020.05.16-16.47.40:831][  0]LogUObjectArray: 46781 objects as part of root set at end of initial load.
+[2020.05.16-16.47.40:831][  0]LogUObjectAllocator: 8150680 out of 0 bytes used by permanent object pool.
+[2020.05.16-16.47.40:831][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.05.16-16.47.41:233][  0]LogSpatialGDKSettings: Offloading is disabled.
+[2020.05.16-16.47.41:233][  0]LogSpatialGDKSettings: Handover is enabled.
+[2020.05.16-16.47.41:233][  0]LogSpatialGDKSettings: Load balancer is disabled.
+[2020.05.16-16.47.41:233][  0]LogSpatialGDKSettings: RPC ring buffers is enabled.
+[2020.05.16-16.47.41:233][  0]LogSpatialGDKSettings: Spatial worker connection on game thread is disabled.
+[2020.05.16-16.47.41:233][  0]LogSpatialGDKSettings: Result types is enabled.
+[2020.05.16-16.47.41:233][  0]LogSpatialGDKSettings: Net cull distance interest is enabled.
+[2020.05.16-16.47.41:234][  0]LogSpatialGDKSettings: Net cull distance interest frequency is disabled.
+[2020.05.16-16.47.41:234][  0]LogSpatialGDKSettings: Actor relevant for connection is disabled.
+[2020.05.16-16.47.41:234][  0]LogSpatialGDKSettings: Batch spatial position updates is disabled.
+[2020.05.16-16.47.41:235][  0]LogPerfCounters: FPerfCounters JSON socket disabled.
+[2020.05.16-16.47.41:980][  0]LogPython: Using Python 2.7.14
+[2020.05.16-16.47.43:540][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.05.16-16.47.43:545][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.05.16-16.47.43:587][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.05.16-16.47.44:118][  0]SourceControl: Source control is disabled
+[2020.05.16-16.47.44:119][  0]SourceControl: Source control is disabled
+[2020.05.16-16.47.44:124][  0]SourceControl: Source control is disabled
+[2020.05.16-16.47.44:127][  0]SourceControl: Source control is disabled
+[2020.05.16-16.47.44:129][  0]SourceControl: Source control is disabled
+[2020.05.16-16.47.44:432][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.05.16-16.47.44:469][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.05.16-16.47.44:469][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.05.16-16.47.44:691][  0]LogOcInput: OculusInput pre-init called
+[2020.05.16-16.47.44:705][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.05.16-16.47.44:705][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.05.16-16.47.45:505][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_24x.png' error.
+[2020.05.16-16.47.45:505][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_24x.png
+[2020.05.16-16.47.45:505][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png' error.
+[2020.05.16-16.47.45:505][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png
+[2020.05.16-16.47.45:505][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png' error.
+[2020.05.16-16.47.45:505][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png
+[2020.05.16-16.47.46:832][  0]LogSpatialDeploymentManager: (Re)starting Spatial service in this project.
+[2020.05.16-16.47.47:862][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_24x.png' error.
+[2020.05.16-16.47.47:862][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_24x.png
+[2020.05.16-16.47.47:862][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png' error.
+[2020.05.16-16.47.47:862][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png
+[2020.05.16-16.47.47:862][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png' error.
+[2020.05.16-16.47.47:862][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png
+[2020.05.16-16.47.49:038][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_24x.png' error.
+[2020.05.16-16.47.49:038][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_24x.png
+[2020.05.16-16.47.49:038][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png' error.
+[2020.05.16-16.47.49:038][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png
+[2020.05.16-16.47.49:038][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png' error.
+[2020.05.16-16.47.49:038][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png
+[2020.05.16-16.47.49:360][  0]LogEngine: Initializing Engine...
+[2020.05.16-16.47.49:365][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.05.16-16.47.50:226][  0]LogSpatialDeploymentManager: Spatial service stopped!
+[2020.05.16-16.47.50:226][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.05.16-16.47.50:244][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.05.16-16.47.50:276][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.05.16-16.47.50:276][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.05.16-16.47.50:276][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.05.16-16.47.50:276][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.05.16-16.47.50:276][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.05.16-16.47.50:276][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.05.16-16.47.50:277][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.05.16-16.47.50:277][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.05.16-16.47.50:278][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.05.16-16.47.50:278][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.05.16-16.47.50:320][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.05.16-16.47.50:320][  0]LogAudioMixer: Display: Name: VZ249 (Аудио Intel(R) для дисплеев)
+[2020.05.16-16.47.50:320][  0]LogAudioMixer: Display: Is Default: Yes
+[2020.05.16-16.47.50:320][  0]LogAudioMixer: Display: Sample Rate: 48000
+[2020.05.16-16.47.50:320][  0]LogAudioMixer: Display: Channel Count Used: 2
+[2020.05.16-16.47.50:320][  0]LogAudioMixer: Display: Device Channel Count: 2
+[2020.05.16-16.47.50:320][  0]LogAudioMixer: Display: Channel Order:
+[2020.05.16-16.47.50:320][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.05.16-16.47.50:320][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.05.16-16.47.50:383][  0]LogAudioMixer: Display: Using Audio Device VZ249 (Аудио Intel(R) для дисплеев)
+[2020.05.16-16.47.50:390][  0]LogInit: FAudioDevice initialized.
+[2020.05.16-16.47.50:390][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.05.16-16.47.50:535][  0]LogDerivedDataCache: Saved boot cache 0.14s 82MB ../../../../Games/Mirror/Game/DerivedDataCache/Boot.ddc.
+[2020.05.16-16.47.50:544][  0]LogInit: Texture streaming: Enabled
+[2020.05.16-16.47.50:568][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.05.16-16.47.50:568][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.05.16-16.47.50:572][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.05.16-16.47.50:618][  0]LogInit: Transaction tracking system initialized
+[2020.05.16-16.47.50:658][  0]BlueprintLog: New page: Editor Load
+[2020.05.16-16.47.50:757][  0]LogSpatialDeploymentManager: Display: Building worker configurations succeeded!
+[2020.05.16-16.47.50:757][  0]LocalizationService: Localization service is disabled
+[2020.05.16-16.47.51:779][  0]LogFileCache: Scanning file cache for directory 'D:/Games/Mirror/Game/Content/' took 0.01s
+[2020.05.16-16.47.51:779][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.05.16-16.47.51:779][  0]LogCook: Display: Mobile HDR setting 1
+[2020.05.16-16.47.51:883][  0]LogStats: FGameplayAbilitiesEditorModule::GameplayTagTreeChanged -  0.000 s
+[2020.05.16-16.47.53:134][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_24x.png' error.
+[2020.05.16-16.47.53:134][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_24x.png
+[2020.05.16-16.47.53:135][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png' error.
+[2020.05.16-16.47.53:135][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png
+[2020.05.16-16.47.53:135][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png' error.
+[2020.05.16-16.47.53:135][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Platforms/XXX/Engine/Content/Launcher/Platform_XXX_128x.png
+[2020.05.16-16.47.53:462][  0]SourceControl: Source control is disabled
+[2020.05.16-16.47.53:462][  0]Cmd: MAP LOAD FILE="../../../../Games/Mirror/Game/Content/StarterProject/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.05.16-16.47.53:463][  0]LightingResults: New page: Lighting Build
+[2020.05.16-16.47.53:466][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.05.16-16.47.53:467][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.05.16-16.47.53:467][  0]MapCheck: New page: Map Check
+[2020.05.16-16.47.53:467][  0]LightingResults: New page: Lighting Build
+[2020.05.16-16.47.53:532][  0]LogUObjectHash: Compacting FUObjectHashTables data took   5.79ms
+[2020.05.16-16.47.54:224][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.05.16-16.47.54:250][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.05.16-16.47.54:308][  0]LogUObjectHash: Compacting FUObjectHashTables data took   5.40ms
+[2020.05.16-16.47.54:308][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.05.16-16.47.54:308][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,157ms to complete.
+[2020.05.16-16.47.54:308][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.847
+[2020.05.16-16.47.54:570][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.16-16.47.54:590][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.16-16.47.54:611][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.16-16.47.54:630][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.16-16.47.54:642][  0]LogCollectionManager: Loaded 0 collections in 0.002205 seconds
+[2020.05.16-16.47.54:675][  0]LogFileCache: Scanning file cache for directory 'D:/Games/Mirror/Game/Saved/Collections/' took 0.00s
+[2020.05.16-16.47.54:675][  0]LogFileCache: Scanning file cache for directory 'D:/Games/Mirror/Game/Content/Developers/Dante/Collections/' took 0.00s
+[2020.05.16-16.47.54:675][  0]LogFileCache: Scanning file cache for directory 'D:/Games/Mirror/Game/Content/Collections/' took 0.00s
+[2020.05.16-16.47.54:675][  0]LogContentBrowser: Native class hierarchy populated in 0.0242 seconds. Added 3214 classes and 768 folders.
+[2020.05.16-16.47.54:683][  0]LogSpatialDeploymentManager: Spatial service started!
+[2020.05.16-16.47.54:683][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2020.05.16-16.47.55:543][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.05.16-16.47.55:545][  0]LogSpatialOutputLog: Error: Failed to read file: launch.log
+[2020.05.16-16.47.55:545][  0]LogSpatialOutputLog: Error: Could not set up log file reader for launch.log
+[2020.05.16-16.47.55:553][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 2 classes and 3 folders.
+[2020.05.16-16.47.55:743][  0]LogSlate: Took 0.103246 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.05.16-16.47.55:759][  0]LogSlate: Took 0.011981 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.05.16-16.47.55:786][  0]LogSlate: Took 0.014424 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.05.16-16.47.56:073][  0]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:1).
+[2020.05.16-16.47.56:177][  0]LogSlate: Took 0.000289 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.05.16-16.47.56:449][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2020.05.16-16.47.56:449][  0]LogLoad: (Engine Initialization) Total time: 30.57 seconds
+[2020.05.16-16.47.56:449][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.05.16-16.47.56:525][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.05.16-16.47.58:353][ 21]LogAssetRegistry: Asset discovery search completed in 25.6893 seconds
+[2020.05.16-16.47.58:363][ 21]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000007 seconds (updated 0 objects)
+[2020.05.16-16.48.01:693][167]Candidate modules for hot reload:
+[2020.05.16-16.48.01:693][167]  Mirror
+[2020.05.16-16.48.01:693][167]Building UnrealBuildTool...
+[2020.05.16-16.48.01:693][167]Building UnrealBuildTool in D:/Unreal Source/...
+[2020.05.16-16.48.01:694][167]Running: C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /nologo /verbosity:quiet "D:/Unreal Source/Engine/Source/Programs/UnrealBuildTool/UnrealBuildTool.csproj" /property:Configuration=Development /property:Platform=AnyCPU
+[2020.05.16-16.48.02:344][167]Launching UnrealBuildTool... [D:/Unreal Source/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Mirror,6552 Win64 Development -TargetType=Editor -Project="D:/Games/Mirror/Game/Mirror.uproject" "D:/Games/Mirror/Game/Mirror.uproject"  -IgnoreJunk]
+[2020.05.16-16.48.02:347][167]Warning: Starting HotReload took  0.7s.
+[2020.05.16-16.52.20:547][  7]CompilerResultsLog: New page: Compilation - 16 мая 2020 г., 22:52:20
+[2020.05.16-16.52.20:548][  7]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Unreal Source).
+[2020.05.16-16.52.20:548][  7]CompilerResultsLog: Creating makefile for MirrorEditor (no existing makefile)
+[2020.05.16-16.52.20:548][  7]CompilerResultsLog: Didn't find trace libraries at D:\Unreal Source\Engine\Plugins\UnrealGDK\SpatialGDK\Binaries\ThirdParty\Improbable\Win64\trace_dynamic.lib and D:\Unreal Source\Engine\Plugins\UnrealGDK\SpatialGDK\Binaries\ThirdParty\Improbable\Win64\trace_dynamic.dll, disabling trace functionality.
+[2020.05.16-16.52.20:548][  7]CompilerResultsLog: Creating makefile for UnrealHeaderTool (no existing makefile)
+[2020.05.16-16.52.20:548][  7]CompilerResultsLog: Parsing headers for MirrorEditor
+[2020.05.16-16.52.20:548][  7]CompilerResultsLog:   Running UnrealHeaderTool "D:\Games\Mirror\Game\Mirror.uproject" "D:\Games\Mirror\Game\Intermediate\Build\Win64\MirrorEditor\Development\MirrorEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors
+[2020.05.16-16.52.20:548][  7]CompilerResultsLog: Reflection code generated for MirrorEditor in 146,4027454 seconds
+[2020.05.16-16.52.20:548][  7]CompilerResultsLog: Building MirrorEditor...
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (D:\visual studio\ide\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (D:\Windows Kits\10).
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog: [Upgrade]
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog: [Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog: [Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog: [Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog: [Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog: [Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in MirrorEditor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog: [Upgrade]
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog: Building 13 actions with 4 processes...
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:   [1/13] Mirror.cpp
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:   [2/13] MirrorGameMode.gen.cpp
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:   [3/13] Mirror.init.gen.cpp
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:   [4/13] MirrorGameMode.cpp
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:   [5/13] MirrorCharacter.gen.cpp
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:   [6/13] MRRCharacterBase.cpp
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:   [7/13] MRRAbilitySystemComponent.cpp
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:   [8/13] MirrorCharacter.cpp
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:   [9/13] MRRCharacterBase.gen.cpp
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:   [10/13] MRRAbilitySystemComponent.gen.cpp
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:   [11/13] UE4Editor-Mirror-6552.lib
+[2020.05.16-16.52.20:549][  7]CompilerResultsLog:      ????????? ??????⥪? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-6552.lib ? ??ꥪ? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-6552.exp
+[2020.05.16-16.52.20:550][  7]CompilerResultsLog:   [12/13] UE4Editor-Mirror-6552.dll
+[2020.05.16-16.52.20:550][  7]CompilerResultsLog:      ????????? ??????⥪? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-6552.suppressed.lib ? ??ꥪ? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-6552.suppressed.exp
+[2020.05.16-16.52.20:550][  7]CompilerResultsLog:   [13/13] MirrorEditor.target
+[2020.05.16-16.52.20:550][  7]CompilerResultsLog: Total time in Parallel executor: 43,51 seconds
+[2020.05.16-16.52.20:550][  7]CompilerResultsLog: Total execution time: 257,98 seconds
+[2020.05.16-16.52.20:551][  7]LogMainFrame: MainFrame: Module compiling took 258.872 seconds
+[2020.05.16-16.52.20:594][  7]LogUObjectHash: Compacting FUObjectHashTables data took   1.33ms
+[2020.05.16-16.52.20:631][  7]LogClass: Could not find existing class MRRCharacterBase in package /Script/Mirror for HotReload, assuming new class
+[2020.05.16-16.52.20:644][  7]LogHotReload: Re-instancing MRRCharacterBase after hot-reload.
+[2020.05.16-16.52.20:913][  7]LogContentBrowser: Native class hierarchy updated for 'Mirror' in 0.0005 seconds. Added 4 classes and 6 folders.
+[2020.05.16-16.52.20:921][  7]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.05.16-16.52.21:117][  7]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2020.05.16-16.52.21:139][  7]LogContentBrowser: Native class hierarchy populated in 0.0135 seconds. Added 3216 classes and 773 folders.
+[2020.05.16-16.52.21:141][  7]Display: HotReload took 259.5s.
+[2020.05.16-16.54.35:130][153]LogSlate: Took 0.016521 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.05.16-18.47.57:700][813]LogSlate: Took 0.011083 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.05.16-18.47.57:886][813]LogSlate: WidgetSwitcher ('None') active index changed to -1
+[2020.05.16-18.47.57:887][813]LogSlate: WidgetSwitcher ('None') active index changed to 0
+[2020.05.16-18.47.57:993][813]LogSlate: Took 0.023419 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.05.16-18.49.33:977][912]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2020.05.16-18.50.13:895][585]Candidate modules for hot reload:
+[2020.05.16-18.50.13:895][585]  Mirror
+[2020.05.16-18.50.13:895][585]Launching UnrealBuildTool... [D:/Unreal Source/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Mirror,8061 Win64 Development -TargetType=Editor -Project="D:/Games/Mirror/Game/Mirror.uproject" "D:/Games/Mirror/Game/Mirror.uproject"  -IgnoreJunk]
+[2020.05.16-18.53.36:297][585]CompilerResultsLog: New page: Compilation - 17 мая 2020 г., 00:53:36
+[2020.05.16-18.53.36:297][585]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Unreal Source).
+[2020.05.16-18.53.36:297][585]CompilerResultsLog: Invalidating makefile for MirrorEditor (source file added)
+[2020.05.16-18.53.36:297][585]CompilerResultsLog: Didn't find trace libraries at D:\Unreal Source\Engine\Plugins\UnrealGDK\SpatialGDK\Binaries\ThirdParty\Improbable\Win64\trace_dynamic.lib and D:\Unreal Source\Engine\Plugins\UnrealGDK\SpatialGDK\Binaries\ThirdParty\Improbable\Win64\trace_dynamic.dll, disabling trace functionality.
+[2020.05.16-18.53.36:297][585]CompilerResultsLog: Parsing headers for MirrorEditor
+[2020.05.16-18.53.36:297][585]CompilerResultsLog:   Running UnrealHeaderTool "D:\Games\Mirror\Game\Mirror.uproject" "D:\Games\Mirror\Game\Intermediate\Build\Win64\MirrorEditor\Development\MirrorEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors
+[2020.05.16-18.53.36:297][585]CompilerResultsLog: Reflection code generated for MirrorEditor in 108,3036218 seconds
+[2020.05.16-18.53.36:297][585]CompilerResultsLog: Building MirrorEditor...
+[2020.05.16-18.53.36:297][585]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (D:\visual studio\ide\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (D:\Windows Kits\10).
+[2020.05.16-18.53.36:298][585]CompilerResultsLog: [Upgrade]
+[2020.05.16-18.53.36:298][585]CompilerResultsLog: [Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+[2020.05.16-18.53.36:298][585]CompilerResultsLog: [Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+[2020.05.16-18.53.36:298][585]CompilerResultsLog: [Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+[2020.05.16-18.53.36:298][585]CompilerResultsLog: [Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+[2020.05.16-18.53.36:298][585]CompilerResultsLog: [Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in MirrorEditor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[2020.05.16-18.53.36:298][585]CompilerResultsLog: [Upgrade]
+[2020.05.16-18.53.36:298][585]CompilerResultsLog: Building 6 actions with 4 processes...
+[2020.05.16-18.53.36:298][585]CompilerResultsLog:   [1/6] Mirror.init.gen.cpp
+[2020.05.16-18.53.36:298][585]CompilerResultsLog:   [2/6] MRRAttributeSetBase.cpp
+[2020.05.16-18.53.36:298][585]CompilerResultsLog:   [3/6] MRRAttributeSetBase.gen.cpp
+[2020.05.16-18.53.36:298][585]CompilerResultsLog:   [4/6] UE4Editor-Mirror-8061.lib
+[2020.05.16-18.53.36:298][585]CompilerResultsLog:      ????????? ??????⥪? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-8061.lib ? ??ꥪ? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-8061.exp
+[2020.05.16-18.53.36:298][585]CompilerResultsLog:   [5/6] UE4Editor-Mirror-8061.dll
+[2020.05.16-18.53.36:298][585]CompilerResultsLog:      ????????? ??????⥪? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-8061.suppressed.lib ? ??ꥪ? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-8061.suppressed.exp
+[2020.05.16-18.53.36:298][585]CompilerResultsLog:   [6/6] MirrorEditor.target
+[2020.05.16-18.53.36:298][585]CompilerResultsLog: Total time in Parallel executor: 26,48 seconds
+[2020.05.16-18.53.36:298][585]CompilerResultsLog: Total execution time: 201,64 seconds
+[2020.05.16-18.53.36:298][585]LogMainFrame: MainFrame: Module compiling took 202.420 seconds
+[2020.05.16-18.53.36:350][585]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2020.05.16-18.53.36:392][585]LogClass: Could not find existing class MRRAttributeSetBase in package /Script/Mirror for HotReload, assuming new class
+[2020.05.16-18.53.36:405][585]LogContentBrowser: Native class hierarchy updated for 'Mirror' in 0.0006 seconds. Added 5 classes and 6 folders.
+[2020.05.16-18.53.36:414][585]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.05.16-18.53.36:587][585]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2020.05.16-18.53.36:610][585]LogContentBrowser: Native class hierarchy populated in 0.0145 seconds. Added 3217 classes and 773 folders.
+[2020.05.16-18.53.36:610][585]Display: HotReload took 202.8s.
+[2020.05.16-18.53.36:627][585]Warning: HotReload operation took 202.8s.
+[2020.05.16-18.53.36:854][585]LogVSAccessor: Couldn't get item operations. Visual Studio may still be initializing.
+[2020.05.16-18.53.36:867][585]LogSlate: Window 'Add C++ Class' being destroyed
+[2020.05.16-18.53.36:895][585]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.36:896][585]LogHotReload: New module detected: UE4Editor-Mirror-8061.dll
+[2020.05.16-18.53.37:012][586]LogHotReload: Starting Hot-Reload from IDE
+[2020.05.16-18.53.37:222][586]LogUObjectHash: Compacting FUObjectHashTables data took   1.04ms
+[2020.05.16-18.53.37:228][586]LogContentBrowser: Native class hierarchy updated for 'Mirror' in 0.0006 seconds. Added 5 classes and 6 folders.
+[2020.05.16-18.53.37:235][586]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.05.16-18.53.37:270][586]LogUObjectHash: Compacting FUObjectHashTables data took   1.04ms
+[2020.05.16-18.53.37:292][586]LogContentBrowser: Native class hierarchy populated in 0.0140 seconds. Added 3217 classes and 773 folders.
+[2020.05.16-18.53.37:305][586]Display: HotReload took  0.3s.
+[2020.05.16-18.53.37:407][586]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:515][587]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:584][588]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:652][589]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:711][590]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:740][591]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:768][592]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:798][593]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:825][594]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:852][595]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:881][596]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:907][597]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:934][598]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:961][599]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.37:987][600]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:015][601]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:044][602]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:070][603]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:097][604]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:124][605]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:152][606]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:179][607]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:205][608]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:232][609]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:258][610]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:286][611]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:313][612]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:339][613]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:364][614]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:390][615]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:418][616]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:445][617]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:472][618]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:499][619]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:525][620]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:553][621]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:579][622]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:606][623]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:633][624]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:661][625]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:690][626]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:717][627]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:752][628]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:776][629]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:804][630]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:831][631]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:857][632]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:883][633]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:911][634]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:939][635]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:965][636]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.38:991][637]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:019][638]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:047][639]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:074][640]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:100][641]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:127][642]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:154][643]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:182][644]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:213][645]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:240][646]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:267][647]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:295][648]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:322][649]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:348][650]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:373][651]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:409][652]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:435][653]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:461][654]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:488][655]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:515][656]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:542][657]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:569][658]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:597][659]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:623][660]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:649][661]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:677][662]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:704][663]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:734][664]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:766][665]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:791][666]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:817][667]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:843][668]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:869][669]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:894][670]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:920][671]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:946][672]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:973][673]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.39:999][674]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:025][675]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:052][676]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:077][677]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:104][678]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:130][679]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:155][680]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:181][681]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:207][682]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:233][683]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:259][684]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:286][685]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:312][686]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:337][687]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:363][688]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:389][689]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:417][690]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:442][691]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:468][692]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:492][693]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:518][694]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:544][695]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:571][696]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:595][697]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:622][698]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:648][699]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:677][700]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:704][701]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:738][702]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:777][703]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:817][704]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:851][705]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:890][706]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:923][707]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:954][708]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.40:988][709]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:014][710]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:040][711]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:067][712]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:093][713]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:120][714]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:145][715]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:170][716]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:197][717]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:222][718]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:250][719]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:278][720]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:305][721]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:332][722]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:357][723]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:383][724]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:409][725]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:435][726]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:460][727]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:486][728]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:511][729]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:538][730]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:563][731]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:589][732]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:614][733]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:640][734]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:666][735]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:693][736]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:719][737]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:746][738]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:773][739]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:799][740]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:830][741]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:856][742]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:882][743]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:908][744]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:934][745]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:960][746]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.41:985][747]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:010][748]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:038][749]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:063][750]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:090][751]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:117][752]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:142][753]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:167][754]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:193][755]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:219][756]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:246][757]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:273][758]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:300][759]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:325][760]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:351][761]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:377][762]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:403][763]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:429][764]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:455][765]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:482][766]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:507][767]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:532][768]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:558][769]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:585][770]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:611][771]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:637][772]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:662][773]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:692][774]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:719][775]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:745][776]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:772][777]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:798][778]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:825][779]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:856][780]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:881][781]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:906][782]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:933][783]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:958][784]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.42:985][785]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:011][786]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:037][787]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:063][788]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:089][789]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:116][790]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:142][791]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:169][792]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:194][793]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:221][794]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:248][795]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:280][796]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:304][797]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:330][798]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:356][799]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:380][800]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:405][801]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:430][802]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:456][803]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:482][804]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:507][805]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:532][806]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:558][807]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:585][808]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:610][809]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:636][810]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:662][811]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:688][812]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:713][813]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:738][814]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:763][815]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:788][816]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:814][817]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:841][818]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:870][819]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:895][820]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:920][821]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:946][822]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:972][823]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.43:999][824]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:033][825]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:072][826]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:110][827]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:143][828]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:180][829]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:218][830]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:252][831]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:290][832]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:318][833]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:344][834]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:369][835]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:395][836]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:425][837]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:451][838]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:476][839]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:502][840]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:529][841]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:555][842]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:581][843]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:606][844]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:631][845]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:657][846]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:682][847]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:708][848]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:735][849]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:761][850]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:786][851]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:813][852]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:839][853]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:865][854]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:895][855]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:920][856]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:946][857]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:971][858]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.44:997][859]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:023][860]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:048][861]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:074][862]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:100][863]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:126][864]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:154][865]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:180][866]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:206][867]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:231][868]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:258][869]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:288][870]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:313][871]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:339][872]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:364][873]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:389][874]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:414][875]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:440][876]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:465][877]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:495][878]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.45:844][879]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.46:178][880]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.46:508][881]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.46:832][882]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.47:177][883]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.47:525][884]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.47:869][885]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.48:193][886]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.48:531][887]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.49:922][888]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.53:004][889]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.53:046][890]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.53:375][891]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.53:708][892]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.54:101][893]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.54:386][894]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.54:713][895]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.55:048][896]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.53.55:390][897]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2020.05.16-18.56.09:652][285]LogVSAccessor: Warning: Couldn't save all documents
+[2020.05.16-18.56.09:676][285]Candidate modules for hot reload:
+[2020.05.16-18.56.09:676][285]  Mirror
+[2020.05.16-18.56.09:676][285]Launching UnrealBuildTool... [D:/Unreal Source/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Mirror,8070 Win64 Development -TargetType=Editor -Project="D:/Games/Mirror/Game/Mirror.uproject" "D:/Games/Mirror/Game/Mirror.uproject"  -IgnoreJunk]
+[2020.05.16-18.56.10:190][285]Warning: Starting HotReload took  0.7s.
+[2020.05.16-19.00.08:366][ 28]CompilerResultsLog: New page: Compilation - 17 мая 2020 г., 01:00:08
+[2020.05.16-19.00.08:367][ 28]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Unreal Source).
+[2020.05.16-19.00.08:367][ 28]CompilerResultsLog: Waiting for 'git status' command to complete
+[2020.05.16-19.00.08:367][ 28]CompilerResultsLog: Parsing headers for MirrorEditor
+[2020.05.16-19.00.08:367][ 28]CompilerResultsLog:   Running UnrealHeaderTool "D:\Games\Mirror\Game\Mirror.uproject" "D:\Games\Mirror\Game\Intermediate\Build\Win64\MirrorEditor\Development\MirrorEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors
+[2020.05.16-19.00.08:367][ 28]CompilerResultsLog: Reflection code generated for MirrorEditor in 171,3166934 seconds
+[2020.05.16-19.00.08:367][ 28]CompilerResultsLog: Building MirrorEditor...
+[2020.05.16-19.00.08:367][ 28]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (D:\visual studio\ide\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (D:\Windows Kits\10).
+[2020.05.16-19.00.08:367][ 28]CompilerResultsLog: [Upgrade]
+[2020.05.16-19.00.08:367][ 28]CompilerResultsLog: [Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog: [Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog: [Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog: [Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog: [Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in MirrorEditor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog: [Upgrade]
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog: Building 6 actions with 4 processes...
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog:   [1/6] Mirror.init.gen.cpp
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog:   [2/6] MRRAttributeSetBase.cpp
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog:   [3/6] MRRAttributeSetBase.gen.cpp
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog:   [4/6] UE4Editor-Mirror-8070.lib
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog:      ????????? ??????⥪? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-8070.lib ? ??ꥪ? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-8070.exp
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog:   [5/6] UE4Editor-Mirror-8070.dll
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog:      ????????? ??????⥪? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-8070.suppressed.lib ? ??ꥪ? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-8070.suppressed.exp
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.cpp.obj : error LNK2019: ??뫪? ?? ??ࠧ??襭??? ???譨? ᨬ??? "public: __cdecl UMRRAttributeSetBase::UMRRAttributeSetBase(void)" (??0UMRRAttributeSetBase@@QEAA@XZ) ? ?㭪樨 "public: static void __cdecl UMRRAttributeSetBase::__DefaultConstructor(class FObjectInitializer const &)" (?__DefaultConstructor@UMRRAttributeSetBase@@SAXAEBVFObjectInitializer@@@Z)
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""public: __cdecl UMRRAttributeSetBase::UMRRAttributeSetBase(void)" (??0UMRRAttributeSetBase@@QEAA@XZ)"
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""public: virtual void __cdecl UMRRAttributeSetBase::PreAttributeChange(struct FGameplayAttribute const &,float &)" (?PreAttributeChange@UMRRAttributeSetBase@@UEAAXAEBUFGameplayAttribute@@AEAM@Z)"
+[2020.05.16-19.00.08:368][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""public: virtual void __cdecl UMRRAttributeSetBase::PostGameplayEffectExecute(struct FGameplayEffectModCallbackData const &)" (?PostGameplayEffectExecute@UMRRAttributeSetBase@@UEAAXAEBUFGameplayEffectModCallbackData@@@Z)"
+[2020.05.16-19.00.08:369][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""public: virtual void __cdecl UMRRAttributeSetBase::GetLifetimeReplicatedProps(class TArray<class FLifetimeProperty,class TSizedDefaultAllocator<32> > &)const " (?GetLifetimeReplicatedProps@UMRRAttributeSetBase@@UEBAXAEAV?$TArray@VFLifetimeProperty@@V?$TSizedDefaultAllocator@$0CA@@@@@@Z)"
+[2020.05.16-19.00.08:369][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_Health(struct FGameplayAttributeData const &)" (?OnRep_Health@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.00.08:369][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_MaxHealth(struct FGameplayAttributeData const &)" (?OnRep_MaxHealth@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.00.08:369][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_HealthRegenRate(struct FGameplayAttributeData const &)" (?OnRep_HealthRegenRate@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.00.08:369][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_Armor(struct FGameplayAttributeData const &)" (?OnRep_Armor@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.00.08:369][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_Weight(struct FGameplayAttributeData const &)" (?OnRep_Weight@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.00.08:369][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_MaxWeight(struct FGameplayAttributeData const &)" (?OnRep_MaxWeight@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.00.08:369][ 28]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_Gold(struct FGameplayAttributeData const &)" (?OnRep_Gold@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.00.08:369][ 28]CompilerResultsLog: Error:   D:\Games\Mirror\Game\Binaries\Win64\UE4Editor-Mirror-8070.dll : fatal error LNK1120: ??ࠧ??襭??? ???譨? ??????⮢: 11
+[2020.05.16-19.00.08:369][ 28]LogMainFrame: MainFrame: Module compiling took 238.715 seconds
+[2020.05.16-19.00.08:371][ 28]Warning: HotReload failed, recompile failed
+[2020.05.16-19.02.06:395][350]Candidate modules for hot reload:
+[2020.05.16-19.02.06:395][350]  Mirror
+[2020.05.16-19.02.06:395][350]Launching UnrealBuildTool... [D:/Unreal Source/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Mirror,7909 Win64 Development -TargetType=Editor -Project="D:/Games/Mirror/Game/Mirror.uproject" "D:/Games/Mirror/Game/Mirror.uproject"  -IgnoreJunk]
+[2020.05.16-19.02.06:398][350]Warning: Starting HotReload took  0.1s.
+[2020.05.16-19.02.23:919][103]CompilerResultsLog: New page: Compilation - 17 мая 2020 г., 01:02:23
+[2020.05.16-19.02.23:919][103]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Unreal Source).
+[2020.05.16-19.02.23:919][103]CompilerResultsLog: Waiting for 'git status' command to complete
+[2020.05.16-19.02.23:919][103]CompilerResultsLog: Building MirrorEditor...
+[2020.05.16-19.02.23:919][103]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (D:\visual studio\ide\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (D:\Windows Kits\10).
+[2020.05.16-19.02.23:919][103]CompilerResultsLog: [Upgrade]
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: [Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: [Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: [Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: [Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: [Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in MirrorEditor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: [Upgrade]
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: Building 3 actions with 4 processes...
+[2020.05.16-19.02.23:920][103]CompilerResultsLog:   [1/3] UE4Editor-Mirror-7909.lib
+[2020.05.16-19.02.23:920][103]CompilerResultsLog:      ????????? ??????⥪? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-7909.lib ? ??ꥪ? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-7909.exp
+[2020.05.16-19.02.23:920][103]CompilerResultsLog:   [2/3] UE4Editor-Mirror-7909.dll
+[2020.05.16-19.02.23:920][103]CompilerResultsLog:      ????????? ??????⥪? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-7909.suppressed.lib ? ??ꥪ? D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-7909.suppressed.exp
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: Error:   MRRAttributeSetBase.cpp.obj : error LNK2019: ??뫪? ?? ??ࠧ??襭??? ???譨? ᨬ??? "public: __cdecl UMRRAttributeSetBase::UMRRAttributeSetBase(void)" (??0UMRRAttributeSetBase@@QEAA@XZ) ? ?㭪樨 "public: static void __cdecl UMRRAttributeSetBase::__DefaultConstructor(class FObjectInitializer const &)" (?__DefaultConstructor@UMRRAttributeSetBase@@SAXAEBVFObjectInitializer@@@Z)
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""public: __cdecl UMRRAttributeSetBase::UMRRAttributeSetBase(void)" (??0UMRRAttributeSetBase@@QEAA@XZ)"
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""public: virtual void __cdecl UMRRAttributeSetBase::PreAttributeChange(struct FGameplayAttribute const &,float &)" (?PreAttributeChange@UMRRAttributeSetBase@@UEAAXAEBUFGameplayAttribute@@AEAM@Z)"
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""public: virtual void __cdecl UMRRAttributeSetBase::PostGameplayEffectExecute(struct FGameplayEffectModCallbackData const &)" (?PostGameplayEffectExecute@UMRRAttributeSetBase@@UEAAXAEBUFGameplayEffectModCallbackData@@@Z)"
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""public: virtual void __cdecl UMRRAttributeSetBase::GetLifetimeReplicatedProps(class TArray<class FLifetimeProperty,class TSizedDefaultAllocator<32> > &)const " (?GetLifetimeReplicatedProps@UMRRAttributeSetBase@@UEBAXAEAV?$TArray@VFLifetimeProperty@@V?$TSizedDefaultAllocator@$0CA@@@@@@Z)"
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_Health(struct FGameplayAttributeData const &)" (?OnRep_Health@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_MaxHealth(struct FGameplayAttributeData const &)" (?OnRep_MaxHealth@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_HealthRegenRate(struct FGameplayAttributeData const &)" (?OnRep_HealthRegenRate@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_Armor(struct FGameplayAttributeData const &)" (?OnRep_Armor@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.02.23:920][103]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_Weight(struct FGameplayAttributeData const &)" (?OnRep_Weight@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.02.23:921][103]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_MaxWeight(struct FGameplayAttributeData const &)" (?OnRep_MaxWeight@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.02.23:921][103]CompilerResultsLog: Error:   MRRAttributeSetBase.gen.cpp.obj : error LNK2001: ??ࠧ??襭??? ???譨? ᨬ??? ""protected: virtual void __cdecl UMRRAttributeSetBase::OnRep_Gold(struct FGameplayAttributeData const &)" (?OnRep_Gold@UMRRAttributeSetBase@@MEAAXAEBUFGameplayAttributeData@@@Z)"
+[2020.05.16-19.02.23:921][103]CompilerResultsLog: Error:   D:\Games\Mirror\Game\Binaries\Win64\UE4Editor-Mirror-7909.dll : fatal error LNK1120: ??ࠧ??襭??? ???譨? ??????⮢: 11
+[2020.05.16-19.02.23:921][103]LogMainFrame: MainFrame: Module compiling took 17.541 seconds
+[2020.05.16-19.02.23:921][103]Warning: HotReload failed, recompile failed
+[2020.05.16-19.02.29:945][368]LogSlate: Took 0.033795 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2020.05.16-19.02.29:947][368]LogSlate: Last resort fallback font was requested. Font: '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf', Character: '⥪ (U+296a)'
+[2020.05.16-19.02.29:997][368]LogSlate: Took 0.047342 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
+[2020.05.16-19.02.44:901][ 79]LogSlate: Window 'Message Log' being destroyed
+[2020.05.16-19.02.44:911][ 79]LogSlate: Window 'Message Log' being destroyed
+[2020.05.16-19.05.57:098][454]LogSlate: WidgetSwitcher ('None') active index changed to -1
+[2020.05.16-19.05.57:098][454]LogSlate: WidgetSwitcher ('None') active index changed to 0
+[2020.05.16-19.06.25:845][715]LogSlate: Warning: Slate: Had to block on waiting for a draw buffer
+[2020.05.16-19.06.34:805][ 99]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2020.05.16-19.07.04:018][ 53]Candidate modules for hot reload:
+[2020.05.16-19.07.04:018][ 53]  Mirror
+[2020.05.16-19.07.04:018][ 53]Launching UnrealBuildTool... [D:/Unreal Source/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Mirror,9357 Win64 Development -TargetType=Editor -Project="D:/Games/Mirror/Game/Mirror.uproject" "D:/Games/Mirror/Game/Mirror.uproject"  -IgnoreJunk]
+[2020.05.16-19.10.21:042][ 53]CompilerResultsLog: New page: Compilation - 17 мая 2020 г., 01:10:21
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Unreal Source).
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: Invalidating makefile for MirrorEditor (directory added)
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: Didn't find trace libraries at D:\Unreal Source\Engine\Plugins\UnrealGDK\SpatialGDK\Binaries\ThirdParty\Improbable\Win64\trace_dynamic.lib and D:\Unreal Source\Engine\Plugins\UnrealGDK\SpatialGDK\Binaries\ThirdParty\Improbable\Win64\trace_dynamic.dll, disabling trace functionality.
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: Parsing headers for MirrorEditor
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog:   Running UnrealHeaderTool "D:\Games\Mirror\Game\Mirror.uproject" "D:\Games\Mirror\Game\Intermediate\Build\Win64\MirrorEditor\Development\MirrorEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: Reflection code generated for MirrorEditor in 113,9748176 seconds
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: Building MirrorEditor...
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (D:\visual studio\ide\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (D:\Windows Kits\10).
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: [Upgrade]
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: [Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: [Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: [Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: [Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: [Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in MirrorEditor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: [Upgrade]
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog: Building 17 actions with 4 processes...
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog:   [1/17] MRRCharacterBase.gen.cpp
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog:   [2/17] MRRPlayerController.gen.cpp
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog:   [3/17] MRRAttributeSetBase.cpp
+[2020.05.16-19.10.21:043][ 53]CompilerResultsLog:   D:\Games\Mirror\Game\Source\Mirror\Private\Characters\GameClasses\Base\MRRAttributeSetBase.cpp(9): fatal error C1083: ?? 㤠???? ??????? 䠩? ????祭??: Player/GDPlayerController.h: No such file or directory,
+[2020.05.16-19.10.21:044][ 53]CompilerResultsLog:   [4/17] MirrorGameMode.gen.cpp
+[2020.05.16-19.10.21:044][ 53]CompilerResultsLog:   [5/17] Mirror.init.gen.cpp
+[2020.05.16-19.10.21:044][ 53]CompilerResultsLog:   [6/17] MirrorCharacter.gen.cpp
+[2020.05.16-19.10.21:044][ 53]CompilerResultsLog:   [7/17] MRRAttributeSetBase.gen.cpp
+[2020.05.16-19.10.21:044][ 53]CompilerResultsLog:   [8/17] Mirror.cpp
+[2020.05.16-19.10.21:044][ 53]CompilerResultsLog:   [9/17] MRRPlayerController.cpp
+[2020.05.16-19.10.21:044][ 53]CompilerResultsLog:   [10/17] MRRAbilitySystemComponent.gen.cpp
+[2020.05.16-19.10.21:044][ 53]CompilerResultsLog:   [11/17] MRRCharacterBase.cpp
+[2020.05.16-19.10.21:044][ 53]CompilerResultsLog:   [12/17] MirrorGameMode.cpp
+[2020.05.16-19.10.21:044][ 53]CompilerResultsLog:   [13/17] MRRAbilitySystemComponent.cpp
+[2020.05.16-19.10.21:044][ 53]CompilerResultsLog:   [14/17] MirrorCharacter.cpp
+[2020.05.16-19.10.21:044][ 53]LogMainFrame: MainFrame: Module compiling took 197.042 seconds
+[2020.05.16-19.10.21:045][ 53]Warning: HotReload failed, recompile failed
+[2020.05.16-19.10.21:045][ 53]Warning: RebindPackages failed because compilation failed.
+[2020.05.16-20.34.13:831][ 53]LogD3D11RHI: Error: Device->CreateBuffer(&Desc, NULL, UniformBufferResource.GetInitReference()) failed 
+ at D:/Unreal Source/Engine/Source/Runtime/Windows/D3D11RHI/Private/D3D11UniformBuffer.cpp:157 
+ with error E_OUTOFMEMORY
+[2020.05.16-20.50.49:768][ 53]LogConsoleResponse:      2 = 256 KB (2D 256x256 PF_B8G8R8A8) HZBResultsCPU
+[2020.05.16-20.50.49:771][ 53]LogConsoleResponse: 6 KB (2D 256x256 PF_B8G8R8A8) HZBResultsCPU
+[2020.05.16-20.50.49:771][ 53]LogConsoleResponse: x143 PF_FloatRGB RT VRam) BloomX unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:772][ 53]LogConsoleResponse: NE>
+[2020.05.16-20.50.49:774][ 53]LogConsoleResponse:  VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:776][ 53]LogConsoleResponse:  128 KB (3D 32x32x32 PF_A2B10G10R10 RT VRam) CombineLUTs VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: rt/Size):<NONE>
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse:  64 KB (Cube 32 PF_FloatRGBA RT) DiffuseIrradianceScratchCubemap0
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: A RT) DiffuseIrradianceScratchCubemap1
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: _A16B16G16R16) SSProfiles
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: X unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: 151x72 PF_FloatRGB RT VRam) BloomY unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: NE>
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse:  21 = 16 KB (2D 128x32 PF_G16R16) PreintegratedGF
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: R16F VRam) LTCAmp VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: nNoise3D
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: ed(358052) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: BloomX unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: PF_FloatRGB RT VRam) BloomY unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse: RGBA RT) AtmosphereDeltaE
+[2020.05.16-20.50.49:777][ 53]LogConsoleResponse:  PF_R8G8) SSAORandomization
+[2020.05.16-20.50.49:779][ 53]LogConsoleResponse: B(Start/Size):<NONE>
+[2020.05.16-20.50.49:779][ 53]LogConsoleResponse:  BloomY unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:779][ 53]LogConsoleResponse: 9x9 PF_FloatRGB RT VRam) BloomX unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:779][ 53]LogConsoleResponse:     70 = 1 KB (2D 19x9 PF_FloatRGB RT VRam) BloomY unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:779][ 53]LogConsoleResponse: rt/Size):<NONE>
+[2020.05.16-20.50.49:779][ 53]LogConsoleResponse: daptation
+[2020.05.16-20.50.49:779][ 53]LogConsoleResponse: 
+[2020.05.16-20.50.49:779][ 53]LogConsoleResponse: B (2D 1x1 PF_B8G8R8A8 RT) BlackDummy
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse:  RT) DefaultNormal8Bit
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse:     5 = 1 KB (2D 1x1 PF_B8G8R8A8 RT) WhiteDummy
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse: DepthStencil) DepthDummy
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse: pth
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse: B (2D 1x1 PF_FloatRGBA RT) ReflectionBrightness unused(358052)
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse: 7 = 1 KB (2D 1x1 PF_R32_UINT RT) ZeroUIntDummy
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse:  PF_R8G8B8A8_UINT RT) StencilDummy
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse:  PF_R16_UINT) SobolSampling
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse:  PF_FloatRGBA RT) SkySHIrradianceMap
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse: 8A8 RT) VolumetricBlackDummy
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse:     81 = 1024 KB (Cube 128 PF_FloatRGBA RT) ReflectionColorScratchCubemap0
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse:     82 = 1024 KB (Cube 128 PF_FloatRGBA RT) ReflectionColorScratchCubemap1
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse:     89 = 1024 KB (Cube[1] 128 PF_FloatRGBA) ReflectionEnvs
+[2020.05.16-20.50.49:781][ 53]LogConsoleResponse:     26 = 675 KB (2D 1208x572 PF_G8 RT UAV) ScreenSpaceAO
+[2020.05.16-20.50.49:783][ 53]LogConsoleResponse:     49 = 675 KB (2D 604x286 PF_B8G8R8A8 RT VRam) AmbientOcclusion unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:784][ 53]LogConsoleResponse:     76 = 675 KB (2D 604x286 PF_FloatRGB RT VRam) BloomX unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:784][ 53]LogConsoleResponse:     65 = 675 KB (2D 604x286 PF_FloatRGB RT VRam) BloomY unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:784][ 53]LogConsoleResponse:      4 = 256 KB (2D 256x256 PF_B8G8R8A8) HZBResultsCPU
+[2020.05.16-20.50.49:784][ 53]LogConsoleResponse:      3 = 256 KB (2D 256x256 PF_B8G8R8A8) HZBResultsCPU
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:      2 = 256 KB (2D 256x256 PF_B8G8R8A8) HZBResultsCPU
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:      1 = 256 KB (2D 256x256 PF_B8G8R8A8) HZBResultsCPU
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     75 = 169 KB (2D 302x143 PF_FloatRGB RT VRam) BloomX unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     66 = 169 KB (2D 302x143 PF_FloatRGB RT VRam) BloomY unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     51 = 128 KB (2D 256x64 PF_FloatRGBA RT) AtmosphereTransmittance
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     60 = 128 KB (3D 32x32x32 PF_A2B10G10R10 RT VRam) CombineLUTs VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     11 = 64 KB (2D 128x128 PF_B8G8R8A8) PerlinNoiseGradient
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     83 = 64 KB (Cube 32 PF_FloatRGBA RT) DiffuseIrradianceScratchCubemap0
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     84 = 64 KB (Cube 32 PF_FloatRGBA RT) DiffuseIrradianceScratchCubemap1
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     46 = 49 KB (2D 98x64 PF_A16B16G16R16) SSProfiles
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     74 = 43 KB (2D 151x72 PF_FloatRGB RT VRam) BloomX unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     67 = 43 KB (2D 151x72 PF_FloatRGB RT VRam) BloomY unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     22 = 32 KB (2D 64x64 PF_FloatRGBA VRam) LTCMat VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     21 = 16 KB (2D 128x32 PF_G16R16) PreintegratedGF
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     23 = 16 KB (2D 64x64 PF_G16R16F VRam) LTCAmp VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     18 = 16 KB (3D 16x16x16 PF_B8G8R8A8) PerlinNoise3D
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     86 = 11 KB (2D 64x64 PF_R16F UAV VRam) HZBFurthest unused(358052) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     73 = 11 KB (2D 76x36 PF_FloatRGB RT VRam) BloomX unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     68 = 11 KB (2D 76x36 PF_FloatRGB RT VRam) BloomY unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:785][ 53]LogConsoleResponse:     53 = 8 KB (2D 64x16 PF_FloatRGBA RT) AtmosphereDeltaE
+[2020.05.16-20.50.49:786][ 53]LogConsoleResponse:     52 = 8 KB (2D 64x16 PF_FloatRGBA RT) AtmosphereIrradiance
+[2020.05.16-20.50.49:786][ 53]LogConsoleResponse:     19 = 8 KB (2D 64x64 PF_R8G8) SSAORandomization
+[2020.05.16-20.50.49:786][ 53]LogConsoleResponse:     72 = 3 KB (2D 38x18 PF_FloatRGB RT VRam) BloomX unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:786][ 53]LogConsoleResponse:     69 = 3 KB (2D 38x18 PF_FloatRGB RT VRam) BloomY unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:786][ 53]LogConsoleResponse:     71 = 1 KB (2D 19x9 PF_FloatRGB RT VRam) BloomX unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:786][ 53]LogConsoleResponse:     70 = 1 KB (2D 19x9 PF_FloatRGB RT VRam) BloomY unused(6) VRamInKB(Start/Size):<NONE>
+[2020.05.16-20.50.49:786][ 53]LogConsoleResponse:     59 = 1 KB (2D 1x1 PF_A32B32G32R32F RT UAV) EyeAdaptation
+[2020.05.16-20.50.49:786][ 53]LogConsoleResponse:     90 = 1 KB (2D 1x1 PF_A32B32G32R32F RT UAV) EyeAdaptation
+[2020.05.16-20.50.49:786][ 53]LogConsoleResponse:      8 = 1 KB (2D 1x1 PF_B8G8R8A8 RT) BlackAlphaOneDummy
+[2020.05.16-20.50.49:786][ 53]LogConsoleResponse:      6 = 1 KB (2D 1x1 PF_B8G8R8A8 RT) BlackDummy
+[2020.05.16-20.50.49:787][ 53]LogConsoleResponse:     10 = 1 KB (2D 1x1 PF_B8G8R8A8 RT) DefaultNormal8Bit
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:      9 = 1 KB (2D 1x1 PF_B8G8R8A8 RT) GreenDummy
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:      5 = 1 KB (2D 1x1 PF_B8G8R8A8 RT) WhiteDummy
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:     13 = 1 KB (2D 1x1 PF_DepthStencil) DepthDummy
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:     12 = 1 KB (2D 1x1 PF_FloatRGBA RT) MaxFP16Depth
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:     15 = 1 KB (2D 1x1 PF_FloatRGBA RT) MidGreyDummy
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:     88 = 1 KB (2D 1x1 PF_FloatRGBA RT) ReflectionBrightness unused(358052)
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:      7 = 1 KB (2D 1x1 PF_R32_UINT RT) ZeroUIntDummy
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:     14 = 1 KB (2D 1x1 PF_R8G8B8A8_UINT RT) StencilDummy
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:     16 = 1 KB (2D 32x16 PF_R16_UINT) SobolSampling
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:     20 = 1 KB (2D 4x4 PF_R8G8) GTAORandomization
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:     85 = 1 KB (2D 9x1 PF_FloatRGBA RT) SkySHIrradianceMap
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse:     17 = 1 KB (3D 1x1x1 PF_B8G8R8A8 RT) VolumetricBlackDummy
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse: 
+[2020.05.16-20.50.49:790][ 53]LogConsoleResponse: Pool: 78/145 MB (referenced/allocated)
+[2020.05.16-20.50.49:790][ 53]Cmd: rhi.DumpMemory
+[2020.05.16-20.50.49:978][ 53]RHI resource memory (not tracked by our allocator)
+[2020.05.16-20.50.49:979][ 53]         2228160  -  Render target memory Cube - STAT_RenderTargetMemoryCube - STATGROUP_RHI - STATCAT_Advanced
+[2020.05.16-20.50.49:981][ 53]        46268420  -  Render target memory 3D - STAT_RenderTargetMemory3D - STATGROUP_RHI - STATCAT_Advanced
+[2020.05.16-20.50.49:981][ 53]        14704716  -  Texture memory 3D - STAT_TextureMemory3D - STATGROUP_RHI - STATCAT_Advanced
+[2020.05.16-20.50.49:981][ 53]
+[2020.05.16-20.50.49:981][ 53]AT_Advanced
+[2020.05.16-20.50.49:982][ 53]      2414794272  -  Uniform buffer memory - STAT_UniformBufferMemory - STATGROUP_RHI - STATCAT_Advanced
+[2020.05.16-20.50.49:982][ 53]         4383520  -  Index buffer memory - STAT_IndexBufferMemory - STATGROUP_RHI - STATCAT_Advanced
+[2020.05.16-20.50.49:982][ 53]       171826737  -  Render target memory 2D - STAT_RenderTargetMemory2D - STATGROUP_RHI - STATCAT_Advanced
+[2020.05.16-20.50.49:982][ 53]           73284  -  Structured buffer memory - STAT_StructuredBufferMemory - STATGROUP_RHI - STATCAT_Advanced
+[2020.05.16-20.50.49:982][ 53]        24841892  -  Vertex buffer memory - STAT_VertexBufferMemory - STATGROUP_RHI - STATCAT_Advanced
+[2020.05.16-20.50.49:982][ 53]2659.957MB total
+[2020.05.16-20.50.49:987][ 53]LogWindows: FPlatformMisc::RequestExit(1)
+[2020.05.16-20.50.49:987][ 53]LogCore: Engine exit requested (reason: Win RequestExit)
+[2020.05.16-20.50.50:024][ 53]Log file closed, 05/16/20 23:50:50

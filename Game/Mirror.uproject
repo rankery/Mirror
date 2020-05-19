@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{439D611B-46CA-D0CA-795C-B697981D60DE}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Mirror",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"GameplayAbilities",
+				"UMG"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "SpatialGDK",
+			"Enabled": true
+		}
+	]
+}

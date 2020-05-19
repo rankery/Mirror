@@ -1,0 +1,9 @@
+{
+	"SourceFiles": [
+		"D:\\Games\\Mirror\\Game\\Source\\Mirror\\Mirror.Build.cs",
+		"D:\\Games\\Mirror\\Game\\Source\\Mirror.Target.cs",
+		"D:\\Games\\Mirror\\Game\\Source\\MirrorEditor.Target.cs",
+		"D:\\Games\\Mirror\\Game\\Source\\MirrorServer.Target.cs"
+	],
+	"EngineVersion": "4.24.3"
+}

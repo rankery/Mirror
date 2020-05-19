@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+<RuntimeProperties>
+<CrashVersion>3</CrashVersion>
+<ExecutionGuid>FC0A76F54830471191D3D9B498817F94</ExecutionGuid>
+<CrashGUID>UE4CC-Windows-B6384A544B31E8FA526F09B061950A77_0003</CrashGUID>
+<IsEnsure>true</IsEnsure>
+<IsAssert>false</IsAssert>
+<CrashType>Ensure</CrashType>
+<ErrorMessage>Ensure condition failed: false [File:D:/Unreal Source/Engine/Source/Runtime/GameplayTags/Private/GameplayTagsManager.cpp] [Line: 1602]
+Requested Tag Effect.HitReact.Left was not found. Check tag data table.
+Stack: 
+0x00007ffc4c74725b UE4Editor-GameplayTags.dll!DispatchCheckVerify&lt;bool,&lt;lambda_fe8d2b4819e07afc8b1331bda14fe292&gt; &gt;() [D:\Unreal Source\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:167]
+0x00007ffc4c727f7d UE4Editor-GameplayTags.dll!UGameplayTagsManager::RequestGameplayTag() [D:\Unreal Source\Engine\Source\Runtime\GameplayTags\Private\GameplayTagsManager.cpp:1602]
+0x00007ffc4c727bdb UE4Editor-GameplayTags.dll!FGameplayTag::RequestGameplayTag() [D:\Unreal Source\Engine\Source\Runtime\GameplayTags\Private\GameplayTagContainer.cpp:1095]
+0x00007ffbfa9b3c99 UE4Editor-Mirror-5677.dll!UMRRAttributeSetBase::UMRRAttributeSetBase() [D:\Games\Mirror\Game\Source\Mirror\Private\Characters\GameClasses\Base\MRRAttributeSetBase.cpp:17]
+0x00007ffc393c008a UE4Editor-CoreUObject.dll!UClass::CreateDefaultObject() [D:\Unreal Source\Engine\Source\Runtime\CoreUObject\Private\UObject\Class.cpp:3143]
+0x00007ffc3964fae3 UE4Editor-CoreUObject.dll!UObjectLoadAllCompiledInDefaultProperties() [D:\Unreal Source\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:933]
+0x00007ffc3962f2cf UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Unreal Source\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:1022]
+0x00007ffc39563765 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance&lt;void __cdecl(FName,bool)&gt;::ExecuteIfSafe() [D:\Unreal Source\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:854]
+0x00007ffc2e83f42a UE4Editor-Core.dll!TBaseMulticastDelegate&lt;void,FName,bool&gt;::Broadcast() [D:\Unreal Source\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+0x00007ffc2e85efa3 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Unreal Source\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:492]
+0x00007ffc658ea837 UE4Editor-Projects.dll!FModuleDescriptor::LoadModulesForPhase() [D:\Unreal Source\Engine\Source\Runtime\Projects\Private\ModuleDescriptor.cpp:554]
+0x00007ffc658eab1f UE4Editor-Projects.dll!FProjectManager::LoadModulesForProject() [D:\Unreal Source\Engine\Source\Runtime\Projects\Private\ProjectManager.cpp:63]
+0x00007ff7eba2e518 UE4Editor.exe!FEngineLoop::LoadStartupModules() [D:\Unreal Source\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:3517]
+0x00007ff7eba30e1c UE4Editor.exe!FEngineLoop::PreInitPostStartupScreen() [D:\Unreal Source\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:2889]
+0x00007ff7eba2b15d UE4Editor.exe!GuardedMain() [D:\Unreal Source\Engine\Source\Runtime\Launch\Private\Launch.cpp:131]
+0x00007ff7eba2b49a UE4Editor.exe!GuardedMainWrapper() [D:\Unreal Source\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:134]
+0x00007ff7eba3bbde UE4Editor.exe!WinMain() [D:\Unreal Source\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:263]
+0x00007ff7eba3e80a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\4\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+0x00007ffc6f1e7bd4 KERNEL32.DLL!UnknownFunction []
+0x00007ffc706cce51 ntdll.dll!UnknownFunction []
+</ErrorMessage>
+<CrashReporterMessage></CrashReporterMessage>
+<ProcessId>1368</ProcessId>
+<SecondsSinceStart>0</SecondsSinceStart>
+<IsInternalBuild>false</IsInternalBuild>
+<IsPerforceBuild>false</IsPerforceBuild>
+<IsSourceDistribution>true</IsSourceDistribution>
+<GameName>UE4-Mirror</GameName>
+<ExecutableName>UE4Editor</ExecutableName>
+<BuildConfiguration>Development</BuildConfiguration>
+<GameSessionID></GameSessionID>
+<Symbols>**UE4*Release-4.24-CL-0-Win64-Development</Symbols>
+<PlatformName>Windows</PlatformName>
+<PlatformNameIni>Windows</PlatformNameIni>
+<EngineMode>Game</EngineMode>
+<EngineModeEx>Unset</EngineModeEx>
+<DeploymentName></DeploymentName>
+<EngineVersion>4.24.3-0+++UE4+Release-4.24</EngineVersion>
+<CommandLine> D:\Games\Mirror\Game\Mirror.uproject</CommandLine>
+<LanguageLCID>0</LanguageLCID>
+<AppDefaultLocale>ru-RU</AppDefaultLocale>
+<BuildVersion>++UE4+Release-4.24-CL-0</BuildVersion>
+<IsUE4Release>false</IsUE4Release>
+<IsRequestingExit>false</IsRequestingExit>
+<UserName></UserName>
+<BaseDir>D:/Unreal Source/Engine/Binaries/Win64/</BaseDir>
+<RootDir>D:/Unreal Source/</RootDir>
+<MachineId>F897E1A84D03F745B3D8ADB2ACC5A730</MachineId>
+<LoginId>f897e1a84d03f745b3d8adb2acc5a730</LoginId>
+<EpicAccountId></EpicAccountId>
+<SourceContext></SourceContext>
+<UserDescription></UserDescription>
+<UserActivityHint></UserActivityHint>
+<CrashDumpMode>0</CrashDumpMode>
+<GameStateName></GameStateName>
+<Misc.NumberOfCores>2</Misc.NumberOfCores>
+<Misc.NumberOfCoresIncludingHyperthreads>4</Misc.NumberOfCoresIncludingHyperthreads>
+<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+<Misc.CPUBrand>Intel(R) Pentium(R) CPU 4405U @ 2.10GHz</Misc.CPUBrand>
+<Misc.PrimaryGPUBrand>Intel(R) HD Graphics 510</Misc.PrimaryGPUBrand>
+<Misc.OSVersionMajor>Windows 10 (Release 1909)</Misc.OSVersionMajor>
+<Misc.OSVersionMinor></Misc.OSVersionMinor>
+<MemoryStats.TotalPhysical>8467349504</MemoryStats.TotalPhysical>
+<MemoryStats.TotalVirtual>140737488224256</MemoryStats.TotalVirtual>
+<MemoryStats.PageSize>4096</MemoryStats.PageSize>
+<MemoryStats.TotalPhysicalGB>8</MemoryStats.TotalPhysicalGB>
+<MemoryStats.AvailablePhysical>2626260992</MemoryStats.AvailablePhysical>
+<MemoryStats.AvailableVirtual>140729695207424</MemoryStats.AvailableVirtual>
+<MemoryStats.UsedPhysical>1836445696</MemoryStats.UsedPhysical>
+<MemoryStats.PeakUsedPhysical>1837723648</MemoryStats.PeakUsedPhysical>
+<MemoryStats.UsedVirtual>1819910144</MemoryStats.UsedVirtual>
+<MemoryStats.PeakUsedVirtual>1820626944</MemoryStats.PeakUsedVirtual>
+<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+<NumMinidumpFramesToIgnore>0</NumMinidumpFramesToIgnore>
+<CallStack></CallStack>
+<PCallStack>
+UE4Editor-GameplayTags  0x000000004c6f0000 + 5725b   
+UE4Editor-GameplayTags  0x000000004c6f0000 + 37f7d   
+UE4Editor-GameplayTags  0x000000004c6f0000 + 37bdb   
+UE4Editor-Mirror-5677   0x00000000fa9b0000 + 3c99    
+UE4Editor-CoreUObject   0x00000000392b0000 + 11008a  
+UE4Editor-CoreUObject   0x00000000392b0000 + 39fae3  
+UE4Editor-CoreUObject   0x00000000392b0000 + 37f2cf  
+UE4Editor-CoreUObject   0x00000000392b0000 + 2b3765  
+UE4Editor-Core          0x000000002e540000 + 2ff42a  
+UE4Editor-Core          0x000000002e540000 + 31efa3  
+UE4Editor-Projects      0x00000000658d0000 + 1a837   
+UE4Editor-Projects      0x00000000658d0000 + 1ab1f   
+UE4Editor               0x00000000eba10000 + 1e518   
+UE4Editor               0x00000000eba10000 + 20e1c   
+UE4Editor               0x00000000eba10000 + 1b15d   
+UE4Editor               0x00000000eba10000 + 1b49a   
+UE4Editor               0x00000000eba10000 + 2bbde   
+UE4Editor               0x00000000eba10000 + 2e80a   
+KERNEL32                0x000000006f1d0000 + 17bd4   
+ntdll                   0x0000000070660000 + 6ce51   
+</PCallStack>
+<PCallStackHash>DFCC4E352970DC9188D82B4606AA5C6BC27E5598</PCallStackHash>
+</RuntimeProperties>
+<PlatformProperties>
+<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+<IsRunningOnBattery>true</IsRunningOnBattery>
+<PlatformCallbackResult>0</PlatformCallbackResult>
+</PlatformProperties>
+<EngineData>
+<RHI.RHIName>D3D11</RHI.RHIName>
+<RHI.AdapterName>NVIDIA GeForce 930MX</RHI.AdapterName>
+<RHI.UserDriverVersion>Unknown</RHI.UserDriverVersion>
+<RHI.InternalDriverVersion>Unknown</RHI.InternalDriverVersion>
+<RHI.DriverDate>Unknown</RHI.DriverDate>
+<RHI.FeatureLevel>SM5</RHI.FeatureLevel>
+</EngineData>
+<GameData>
+</GameData>
+</FGenericCrashContext>

@@ -1,0 +1,34 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Mirror-3948.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRAbilitySystemComponent.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRAttributeSetBase.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRCharacterBase.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRPlayerStateBase.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRPlayerController.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRPlayerState.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRDamageTextWidgetComponent.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRHUDWidget.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\Mirror.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MirrorCharacter.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MirrorGameMode.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\Mirror.init.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MirrorCharacter.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MirrorGameMode.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRAbilitySystemComponent.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRAttributeSetBase.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRCharacterBase.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRDamageTextWidgetComponent.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRHUDWidget.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRPlayerController.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRPlayerState.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRPlayerStateBase.gen.cpp.obj"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\Default.rc2.res"
+/OUT:"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-3948.lib"
+/INCLUDE:IMPLEMENT_MODULE_Mirror

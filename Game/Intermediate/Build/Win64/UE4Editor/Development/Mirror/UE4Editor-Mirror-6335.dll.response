@@ -1,0 +1,96 @@
+/MANIFEST:NO
+/NOLOGO
+/DEBUG
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/FIXED:No
+/NXCOMPAT
+/STACK:12000000
+/DELAY:UNLOAD
+/DLL
+/PDBALTPATH:%_PDB%
+/OPT:NOREF
+/OPT:NOICF
+/INCREMENTAL:NO
+/ignore:4199
+/ignore:4099
+/DELAYLOAD:"d3d12.dll"
+/DELAYLOAD:"DBGHELP.DLL"
+/DELAYLOAD:"improbable_worker.dll"
+/LIBPATH:"D:\Unreal Source\Engine\Plugins\UnrealGDK\SpatialGDK\Binaries\ThirdParty\Improbable\Win64"
+/LIBPATH:"D:\visual studio\ide\VC\Tools\MSVC\14.25.28610\lib\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.2\lib\um\x64"
+/LIBPATH:"D:\Windows Kits\10\lib\10.0.18362.0\ucrt\x64"
+/LIBPATH:"D:\Windows Kits\10\lib\10.0.18362.0\um\x64"
+/NODEFAULTLIB:"LIBCMT"
+/NODEFAULTLIB:"LIBCPMT"
+/NODEFAULTLIB:"LIBCMTD"
+/NODEFAULTLIB:"LIBCPMTD"
+/NODEFAULTLIB:"MSVCRTD"
+/NODEFAULTLIB:"MSVCPRTD"
+/NODEFAULTLIB:"LIBC"
+/NODEFAULTLIB:"LIBCP"
+/NODEFAULTLIB:"LIBCD"
+/NODEFAULTLIB:"LIBCPD"
+/FUNCTIONPADMIN
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRAttributeSetBase.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRCharacterBase.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRAbilitySystemComponent.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRPlayerController.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\Mirror.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MirrorCharacter.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MirrorGameMode.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\Mirror.init.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MirrorCharacter.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MirrorGameMode.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRAbilitySystemComponent.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRAttributeSetBase.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRCharacterBase.gen.cpp.obj"
+"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\MRRPlayerController.gen.cpp.obj"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\Default.rc2.res"
+"delayimp.lib"
+"wininet.lib"
+"rpcrt4.lib"
+"ws2_32.lib"
+"dbghelp.lib"
+"comctl32.lib"
+"Winmm.lib"
+"kernel32.lib"
+"user32.lib"
+"gdi32.lib"
+"winspool.lib"
+"comdlg32.lib"
+"advapi32.lib"
+"shell32.lib"
+"ole32.lib"
+"oleaut32.lib"
+"uuid.lib"
+"odbc32.lib"
+"odbccp32.lib"
+"netapi32.lib"
+"iphlpapi.lib"
+"setupapi.lib"
+"dwmapi.lib"
+"imm32.lib"
+"D:\Unreal Source\Engine\Plugins\UnrealGDK\SpatialGDK\Binaries\ThirdParty\Improbable\Win64\improbable_worker.lib"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\Slate\UE4Editor-Slate.lib"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\SlateCore\UE4Editor-SlateCore.lib"
+"D:\Unreal Source\Engine\Plugins\Runtime\GameplayAbilities\Intermediate\Build\Win64\UE4Editor\Development\GameplayAbilities\UE4Editor-GameplayAbilities.lib"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\GameplayTags\UE4Editor-GameplayTags.lib"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\GameplayTasks\UE4Editor-GameplayTasks.lib"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\Sockets\UE4Editor-Sockets.lib"
+"D:\Unreal Source\Engine\Plugins\Online\OnlineSubsystemUtils\Intermediate\Build\Win64\UE4Editor\Development\OnlineSubsystemUtils\UE4Editor-OnlineSubsystemUtils.lib"
+"D:\Unreal Source\Engine\Plugins\Runtime\PhysXVehicles\Intermediate\Build\Win64\UE4Editor\Development\PhysXVehicles\UE4Editor-PhysXVehicles.lib"
+"D:\Unreal Source\Engine\Plugins\UnrealGDK\SpatialGDK\Intermediate\Build\Win64\UE4Editor\Development\SpatialGDK\UE4Editor-SpatialGDK.lib"
+"D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Development\HeadMountedDisplay\UE4Editor-HeadMountedDisplay.lib"
+/OUT:"D:\Games\Mirror\Game\Binaries\Win64\UE4Editor-Mirror-6335.dll"
+/IMPLIB:"D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\UE4Editor-Mirror-6335.suppressed.lib"
+/PDB:"D:\Games\Mirror\Game\Binaries\Win64\UE4Editor-Mirror-6335.pdb"
+/ignore:4078
+/INCLUDE:IMPLEMENT_MODULE_Mirror

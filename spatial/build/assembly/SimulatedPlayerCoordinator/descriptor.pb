@@ -1,0 +1,3 @@
+
+ÖÑStartCoordinator.shreceptionist${IMPROBABLE_RECEPTIONIST_HOST}${IMPROBABLE_RECEPTIONIST_PORT}${IMPROBABLE_WORKER_ID}$coordinator_start_delay_millis=10000connect.to.spatialos+workerTypeUnrealClient+deployment<TARGET_DEPLOYMENT>+devAuthToken<DEV_AUTH_TOKEN>	+workerId!<IMPROBABLE_SIM_PLAYER_WORKER_ID>+useExternalIpForBridgetrue-abslog=${IMPROBABLE_LOG_FILE}-NoVerifyGC-nullRHI-simulatedplayer"!
+UnrealSimulatedPlayer@Linux.zip
