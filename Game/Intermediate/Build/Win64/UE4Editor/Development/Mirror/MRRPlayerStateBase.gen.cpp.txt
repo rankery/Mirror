@@ -1,7 +1,0 @@
-D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\Definitions.Mirror.h
-D:\Unreal Source\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\Unreal Source\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\Games\Mirror\Game\Source\Mirror/Public/Characters/MRRPlayerStateBase.h
-D:\Unreal Source\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerState.h
-D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerState.generated.h
-D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Inc\Mirror\MRRPlayerStateBase.generated.h

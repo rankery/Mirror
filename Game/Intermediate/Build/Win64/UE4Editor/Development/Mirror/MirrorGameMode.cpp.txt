@@ -1,7 +1,0 @@
-D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Development\Mirror\Definitions.Mirror.h
-D:\Games\Mirror\Game\Source\Mirror\MirrorGameMode.h
-D:\Unreal Source\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-D:\Unreal Source\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-D:\Unreal Source\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-D:\Games\Mirror\Game\Intermediate\Build\Win64\UE4Editor\Inc\Mirror\MirrorGameMode.generated.h
