@@ -32,32 +32,32 @@ public:
 	*/
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes")
-		float GetHealth() const;
+	float GetHealth() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes")
-		float GetMaxHealth() const;
+	float GetMaxHealth() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes")
-		float GetHealthRegenRate() const;
+	float GetHealthRegenRate() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes")
-		float GetWeight() const;
+	float GetWeight() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes")
-		float GetMaxWeight() const;
+	float GetMaxWeight() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes")
-		float GetArmor() const;
+	float GetArmor() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes")
-		int32 GetGold() const;
+	int32 GetGold() const;
 
 protected:
 	UPROPERTY()
-		class UMRRAbilitySystemComponent* AbilitySystemComponent;
+	class UMRRAbilitySystemComponent* AbilitySystemComponent;
 
 	UPROPERTY()
-		class UMRRAttributeSetBase* AttributeSetBase;
+	class UMRRAttributeSetBase* AttributeSetBase;
 
 	FGameplayTag DeadTag;
 

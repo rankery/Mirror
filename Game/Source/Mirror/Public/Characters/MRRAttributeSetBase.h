@@ -13,7 +13,7 @@
 	GAMEPLAYATTRIBUTE_VALUE_SETTER(PropertyName) \
 	GAMEPLAYATTRIBUTE_VALUE_INITTER(PropertyName)
 /**
- * 
+ *
  */
 UCLASS()
 class MIRROR_API UMRRAttributeSetBase : public UAttributeSet
@@ -29,33 +29,33 @@ public:
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 	UPROPERTY(BlueprintReadOnly, Category = "Health", ReplicatedUsing = OnRep_Health)
-		FGameplayAttributeData Health;
+	FGameplayAttributeData Health;
 	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, Health)
 
-		UPROPERTY(BlueprintReadOnly, Category = "Health", ReplicatedUsing = OnRep_MaxHealth)
-		FGameplayAttributeData MaxHealth;
+	UPROPERTY(BlueprintReadOnly, Category = "Health", ReplicatedUsing = OnRep_MaxHealth)
+	FGameplayAttributeData MaxHealth;
 	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, MaxHealth)
 
-		// Health regen rate will passively increase Health every second
-		UPROPERTY(BlueprintReadOnly, Category = "Health", ReplicatedUsing = OnRep_HealthRegenRate)
-		FGameplayAttributeData HealthRegenRate;
+	// Health regen rate will passively increase Health every second
+	UPROPERTY(BlueprintReadOnly, Category = "Health", ReplicatedUsing = OnRep_HealthRegenRate)
+	FGameplayAttributeData HealthRegenRate;
 	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, HealthRegenRate)
 
-		// Armor reduces the amount of damage done by attackers
-		UPROPERTY(BlueprintReadOnly, Category = "Armor", ReplicatedUsing = OnRep_Armor)
-		FGameplayAttributeData Armor;
+	// Armor reduces the amount of damage done by attackers
+	UPROPERTY(BlueprintReadOnly, Category = "Armor", ReplicatedUsing = OnRep_Armor)
+	FGameplayAttributeData Armor;
 	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, Armor)
 
-		UPROPERTY(BlueprintReadOnly, Category = "Weight", ReplicatedUsing = OnRep_Weight)
-		FGameplayAttributeData Weight;
+	UPROPERTY(BlueprintReadOnly, Category = "Weight", ReplicatedUsing = OnRep_Weight)
+	FGameplayAttributeData Weight;
 	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, Weight)
 
-		UPROPERTY(BlueprintReadOnly, Category = "Weight", ReplicatedUsing = OnRep_MaxWeight)
-		FGameplayAttributeData MaxWeight;
+	UPROPERTY(BlueprintReadOnly, Category = "Weight", ReplicatedUsing = OnRep_MaxWeight)
+	FGameplayAttributeData MaxWeight;
 	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, MaxWeight)
 
-		UPROPERTY(BlueprintReadOnly, Category = "Gold", ReplicatedUsing = OnRep_Gold)
-		FGameplayAttributeData Gold;
+	UPROPERTY(BlueprintReadOnly, Category = "Gold", ReplicatedUsing = OnRep_Gold)
+	FGameplayAttributeData Gold;
 	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, Gold)
 
 protected:
@@ -65,25 +65,25 @@ protected:
 	**/
 
 	UFUNCTION()
-		virtual void OnRep_Health();
+	virtual void OnRep_Health();
 
 	UFUNCTION()
-		virtual void OnRep_MaxHealth();
+	virtual void OnRep_MaxHealth();
 
 	UFUNCTION()
-		virtual void OnRep_HealthRegenRate();
+	virtual void OnRep_HealthRegenRate();
 
 	UFUNCTION()
-		virtual void OnRep_Armor();
+	virtual void OnRep_Armor();
 
 	UFUNCTION()
-		virtual void OnRep_Weight();
+	virtual void OnRep_Weight();
 
 	UFUNCTION()
-		virtual void OnRep_MaxWeight();
+	virtual void OnRep_MaxWeight();
 
 	UFUNCTION()
-		virtual void OnRep_Gold();
+	virtual void OnRep_Gold();
 private:
 	FGameplayTag HitDirectionFrontTag;
 	FGameplayTag HitDirectionBackTag;
