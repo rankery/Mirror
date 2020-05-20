@@ -27,6 +27,10 @@ public:
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
+	/**
+	* Resources
+	*/
+
 	UPROPERTY(BlueprintReadOnly, Category = "Health", ReplicatedUsing = OnRep_Health)
 	FGameplayAttributeData Health;
 	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, Health)
@@ -39,9 +43,41 @@ public:
 	FGameplayAttributeData HealthRegenRate;
 	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, HealthRegenRate)
 
-	UPROPERTY(BlueprintReadOnly, Category = "Armor", ReplicatedUsing = OnRep_Armor)
-	FGameplayAttributeData Armor;
-	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, Armor)
+	/**
+	* Attack
+	*/
+
+	UPROPERTY(BlueprintReadOnly, Category = "Attack|PhysicalDamageIncrease", ReplicatedUsing = OnRep_PhysicalDamageIncrease)
+	FGameplayAttributeData PhysicalDamageIncrease;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, PhysicalDamageIncrease)
+
+	UPROPERTY(BlueprintReadOnly, Category = "Attack|AttackSpeed", ReplicatedUsing = OnRep_AttackSpeed)
+	FGameplayAttributeData AttackSpeed;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, AttackSpeed)
+
+	UPROPERTY(BlueprintReadOnly, Category = "Attack|MagicalDamageIncrease", ReplicatedUsing = OnRep_MagicalDamageIncrease)
+	FGameplayAttributeData MagicalDamageIncrease;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, MagicalDamageIncrease)
+
+	UPROPERTY(BlueprintReadOnly, Category = "Attack|CastSpeed", ReplicatedUsing = OnRep_CastSpeed)
+	FGameplayAttributeData CastSpeed;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, CastSpeed)
+
+	/**
+	* Defence
+	*/
+
+	UPROPERTY(BlueprintReadOnly, Category = "Defence|PhysicalDamageReduction", ReplicatedUsing = OnRep_PhysicalDamageReduction)
+	FGameplayAttributeData PhysicalDamageReduction;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, PhysicalDamageReduction)
+
+	UPROPERTY(BlueprintReadOnly, Category = "Defence|MagicalDamageReduction", ReplicatedUsing = OnRep_MagicalDamageReduction)
+	FGameplayAttributeData MagicalDamageReduction;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, MagicalDamageReduction)
+
+	/**
+	* Utility
+	*/
 
 	UPROPERTY(BlueprintReadOnly, Category = "Weight", ReplicatedUsing = OnRep_Weight)
 	FGameplayAttributeData Weight;
@@ -54,6 +90,30 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Gold", ReplicatedUsing = OnRep_Gold)
 	FGameplayAttributeData Gold;
 	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, Gold)
+		
+	/**
+	* Action
+	*/
+
+	UPROPERTY(BlueprintReadOnly, Category = "MovementSpeed", ReplicatedUsing = OnRep_MovementSpeed)
+	FGameplayAttributeData MovementSpeed;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, MovementSpeed)
+
+	UPROPERTY(BlueprintReadOnly, Category = "TimeModifier", ReplicatedUsing = OnRep_TimeModifier)
+	FGameplayAttributeData TimeModifier;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, TimeModifier)
+
+	UPROPERTY(BlueprintReadOnly, Category = "GravityX", ReplicatedUsing = OnRep_GravityX)
+	FGameplayAttributeData GravityX;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, GravityX)
+
+	UPROPERTY(BlueprintReadOnly, Category = "GravityY", ReplicatedUsing = OnRep_GravityY)
+	FGameplayAttributeData GravityY;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, GravityY)
+
+	UPROPERTY(BlueprintReadOnly, Category = "GravityZ", ReplicatedUsing = OnRep_GravityZ)
+	FGameplayAttributeData GravityZ;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSetBase, GravityZ)
 
 protected:
 	void AdjustAttributeForMaxChange(FGameplayAttributeData& AffectedAttribute, const FGameplayAttributeData& MaxAttribute, float NewMaxValue, const FGameplayAttribute& AffectedAttributeProperty);
@@ -78,6 +138,39 @@ protected:
 
 	UFUNCTION()
 	virtual void OnRep_Gold();
+
+	UFUNCTION()
+	virtual void OnRep_PhysicalDamageIncrease();
+
+	UFUNCTION()
+	virtual void OnRep_AttackSpeed();
+
+	UFUNCTION()
+	virtual void OnRep_MagicalDamageIncrease();
+
+	UFUNCTION()
+	virtual void OnRep_CastSpeed();
+
+	UFUNCTION()
+	virtual void OnRep_PhysicalDamageReduction();
+
+	UFUNCTION()
+	virtual void OnRep_MagicalDamageReduction();
+
+	UFUNCTION()
+	virtual void OnRep_MovementSpeed();
+
+	UFUNCTION()
+	virtual void OnRep_TimeModifier();
+
+	UFUNCTION()
+	virtual void OnRep_GravityX();
+
+	UFUNCTION()
+	virtual void OnRep_GravityY();
+
+	UFUNCTION()
+	virtual void OnRep_GravityZ();
 private:
 	FGameplayTag HitDirectionFrontTag;
 	FGameplayTag HitDirectionBackTag;
