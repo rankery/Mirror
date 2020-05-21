@@ -8,7 +8,6 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FReceivedDamageDelegate, UMRRAbilitySystemComponent*, SourceASC, float, UnmitigatedDamage, float, MitigatedDamage);
 
-
 /**
  * 
  */

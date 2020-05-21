@@ -13,4 +13,16 @@ class AMirrorGameMode : public AGameModeBase
 
 public:
 	AMirrorGameMode();
+
+	void HeroDied(AController* Controller);
+protected:
+	float RespawnDelay;
+
+	TSubclassOf<class AMRRHeroCharacter> HeroClass;
+
+	AActor* EnemySpawnPoint;
+
+	virtual void BeginPlay() override;
+
+	void RespawnHero(AController* Controller);
 };
