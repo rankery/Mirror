@@ -52,13 +52,13 @@ public:
 	*/
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes|Attack")
-	float GetPhysicalDamageIncrease() const;
+	float GetOutgoingPhysicalDamageMultiplier() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes|Attack")
 	float GetAttackSpeed() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes|Attack")
-	float GetMagicalDamageIncrease() const;
+	float GetOutgoingMagicalDamageMultiplier() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes|Attack")
 	float GetCastSpeed() const;
@@ -68,10 +68,10 @@ public:
 	*/
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes|Defence")
-	float GetPhysicalDamageReduction() const;
+	float GetIncomingPhysicalDamageMultiplier() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Mirror|MRRPlayerState|Attributes|Defence")
-	float GetMagicalDamageReduction() const;
+	float GetIncomingMagicalDamageMultiplier() const;
 
 	/**
 	* Utility
@@ -118,13 +118,13 @@ protected:
 	FDelegateHandle MaxHealthChangedDelegateHandle;
 	FDelegateHandle HealthRegenRateChangedDelegateHandle;
 
-	FDelegateHandle PhysicalDamageIncreaseChangedDelegateHandle;
+	FDelegateHandle OutgoingPhysicalDamageMultiplierChangedDelegateHandle;
 	FDelegateHandle AttackSpeedChangedDelegateHandle;
-	FDelegateHandle MagicalDamageIncreaseChangedDelegateHandle;
+	FDelegateHandle OutgoingMagicalDamageMultiplierChangedDelegateHandle;
 	FDelegateHandle CastSpeedChangedDelegateHandle;
 
-	FDelegateHandle PhysicalDamageReductionChangedDelegateHandle;
-	FDelegateHandle MagicalDamageReductionChangedDelegateHandle;
+	FDelegateHandle IncomingPhysicalDamageMultiplierChangedDelegateHandle;
+	FDelegateHandle IncomingMagicalDamageMultiplierChangedDelegateHandle;
 
 	FDelegateHandle WeightChangedDelegateHandle;
 	FDelegateHandle MaxWeightChangedDelegateHandle;
@@ -144,13 +144,13 @@ protected:
 	virtual void MaxHealthChanged(const FOnAttributeChangeData& Data);
 	virtual void HealthRegenRateChanged(const FOnAttributeChangeData& Data);
 
-	virtual void PhysicalDamageIncreaseChanged(const FOnAttributeChangeData& Data);
+	virtual void OutgoingPhysicalDamageMultiplierChanged(const FOnAttributeChangeData& Data);
 	virtual void AttackSpeedChanged(const FOnAttributeChangeData& Data);
-	virtual void MagicalDamageIncreaseChanged(const FOnAttributeChangeData& Data);
+	virtual void OutgoingMagicalDamageMultiplierChanged(const FOnAttributeChangeData& Data);
 	virtual void CastSpeedChanged(const FOnAttributeChangeData& Data);
 	
-	virtual void PhysicalDamageReductionChanged(const FOnAttributeChangeData& Data);
-	virtual void MagicalDamageReductionChanged(const FOnAttributeChangeData& Data);
+	virtual void IncomingPhysicalDamageMultiplierChanged(const FOnAttributeChangeData& Data);
+	virtual void IncomingMagicalDamageMultiplierChanged(const FOnAttributeChangeData& Data);
 	
 	virtual void WeightChanged(const FOnAttributeChangeData& Data);
 	virtual void MaxWeightChanged(const FOnAttributeChangeData& Data);

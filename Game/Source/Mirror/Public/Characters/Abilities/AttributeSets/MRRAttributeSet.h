@@ -29,6 +29,20 @@ public:
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 	/**
+	* Damage
+	* Damage is a meta attribute used by the DamageExecution to calculate final damage, which then turns into -Health
+	*  Temporary value that only exists on the Server. Not replicated.
+	*/
+
+	UPROPERTY(BlueprintReadOnly, Category = "PhysicalDamage", meta = (HideFromLevelInfos))
+	FGameplayAttributeData PhysicalDamage;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSet, PhysicalDamage)
+
+	UPROPERTY(BlueprintReadOnly, Category = "MagicalDamage", meta = (HideFromLevelInfos))
+	FGameplayAttributeData MagicalDamage;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSet, MagicalDamage)
+
+	/**
 	* Resources
 	*/
 
@@ -48,17 +62,17 @@ public:
 	* Attack
 	*/
 
-	UPROPERTY(BlueprintReadOnly, Category = "Attack|PhysicalDamageIncrease", ReplicatedUsing = OnRep_PhysicalDamageIncrease)
-	FGameplayAttributeData PhysicalDamageIncrease;
-	ATTRIBUTE_ACCESSORS(UMRRAttributeSet, PhysicalDamageIncrease)
+	UPROPERTY(BlueprintReadOnly, Category = "Attack|PhysicalDamageMultiplier", ReplicatedUsing = OnRep_OutgoingPhysicalDamageMultiplier)
+	FGameplayAttributeData OutgoingPhysicalDamageMultiplier;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSet, OutgoingPhysicalDamageMultiplier)
 
 	UPROPERTY(BlueprintReadOnly, Category = "Attack|AttackSpeed", ReplicatedUsing = OnRep_AttackSpeed)
 	FGameplayAttributeData AttackSpeed;
 	ATTRIBUTE_ACCESSORS(UMRRAttributeSet, AttackSpeed)
 
-	UPROPERTY(BlueprintReadOnly, Category = "Attack|MagicalDamageIncrease", ReplicatedUsing = OnRep_MagicalDamageIncrease)
-	FGameplayAttributeData MagicalDamageIncrease;
-	ATTRIBUTE_ACCESSORS(UMRRAttributeSet, MagicalDamageIncrease)
+	UPROPERTY(BlueprintReadOnly, Category = "Attack|MagicalDamageMultiplier", ReplicatedUsing = OnRep_OutgoingMagicalDamageMultiplier)
+	FGameplayAttributeData OutgoingMagicalDamageMultiplier;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSet, OutgoingMagicalDamageMultiplier)
 
 	UPROPERTY(BlueprintReadOnly, Category = "Attack|CastSpeed", ReplicatedUsing = OnRep_CastSpeed)
 	FGameplayAttributeData CastSpeed;
@@ -68,13 +82,13 @@ public:
 	* Defence
 	*/
 
-	UPROPERTY(BlueprintReadOnly, Category = "Defence|PhysicalDamageReduction", ReplicatedUsing = OnRep_PhysicalDamageReduction)
-	FGameplayAttributeData PhysicalDamageReduction;
-	ATTRIBUTE_ACCESSORS(UMRRAttributeSet, PhysicalDamageReduction)
+	UPROPERTY(BlueprintReadOnly, Category = "Defence|PhysicalDamageMultiplier", ReplicatedUsing = OnRep_IncomingPhysicalDamageMultiplier)
+	FGameplayAttributeData IncomingPhysicalDamageMultiplier;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSet, IncomingPhysicalDamageMultiplier)
 
-	UPROPERTY(BlueprintReadOnly, Category = "Defence|MagicalDamageReduction", ReplicatedUsing = OnRep_MagicalDamageReduction)
-	FGameplayAttributeData MagicalDamageReduction;
-	ATTRIBUTE_ACCESSORS(UMRRAttributeSet, MagicalDamageReduction)
+	UPROPERTY(BlueprintReadOnly, Category = "Defence|MagicalDamageMultiplier", ReplicatedUsing = OnRep_IncomingMagicalDamageMultiplier)
+	FGameplayAttributeData IncomingMagicalDamageMultiplier;
+	ATTRIBUTE_ACCESSORS(UMRRAttributeSet, IncomingMagicalDamageMultiplier)
 
 	/**
 	* Utility
@@ -138,22 +152,22 @@ protected:
 	virtual void OnRep_Gold();
 
 	UFUNCTION()
-	virtual void OnRep_PhysicalDamageIncrease();
+	virtual void OnRep_OutgoingPhysicalDamageMultiplier();
 
 	UFUNCTION()
 	virtual void OnRep_AttackSpeed();
 
 	UFUNCTION()
-	virtual void OnRep_MagicalDamageIncrease();
+	virtual void OnRep_OutgoingMagicalDamageMultiplier();
 
 	UFUNCTION()
 	virtual void OnRep_CastSpeed();
 
 	UFUNCTION()
-	virtual void OnRep_PhysicalDamageReduction();
+	virtual void OnRep_IncomingPhysicalDamageMultiplier();
 
 	UFUNCTION()
-	virtual void OnRep_MagicalDamageReduction();
+	virtual void OnRep_IncomingMagicalDamageMultiplier();
 
 	UFUNCTION()
 	virtual void OnRep_MovementSpeed();
@@ -169,9 +183,4 @@ protected:
 
 	UFUNCTION()
 	virtual void OnRep_GravityZ();
-private:
-	FGameplayTag HitDirectionFrontTag;
-	FGameplayTag HitDirectionBackTag;
-	FGameplayTag HitDirectionRightTag;
-	FGameplayTag HitDirectionLeftTag;
 };

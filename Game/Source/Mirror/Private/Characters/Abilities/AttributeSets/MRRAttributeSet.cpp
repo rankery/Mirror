@@ -10,10 +10,7 @@
 
 UMRRAttributeSet::UMRRAttributeSet()
 {
-	HitDirectionFrontTag = FGameplayTag::RequestGameplayTag(FName("Effect.HitReact.Front"));
-	HitDirectionBackTag = FGameplayTag::RequestGameplayTag(FName("Effect.HitReact.Back"));
-	HitDirectionRightTag = FGameplayTag::RequestGameplayTag(FName("Effect.HitReact.Right"));
-	HitDirectionLeftTag = FGameplayTag::RequestGameplayTag(FName("Effect.HitReact.Left"));
+
 }
 
 void UMRRAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue)
@@ -43,13 +40,13 @@ void UMRRAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Out
 	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, MaxHealth, COND_None, REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, HealthRegenRate, COND_None, REPNOTIFY_Always);
 
-	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, PhysicalDamageIncrease, COND_None, REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, OutgoingPhysicalDamageMultiplier, COND_None, REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, AttackSpeed, COND_None, REPNOTIFY_Always);
-	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, MagicalDamageIncrease, COND_None, REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, OutgoingMagicalDamageMultiplier, COND_None, REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, CastSpeed, COND_None, REPNOTIFY_Always);
 
-	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, PhysicalDamageReduction, COND_None, REPNOTIFY_Always);
-	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, MagicalDamageReduction, COND_None, REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, IncomingPhysicalDamageMultiplier, COND_None, REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, IncomingMagicalDamageMultiplier, COND_None, REPNOTIFY_Always);
 
 	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, Weight, COND_None, REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UMRRAttributeSet, MaxWeight, COND_None, REPNOTIFY_Always);
@@ -90,9 +87,9 @@ void UMRRAttributeSet::OnRep_HealthRegenRate()
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UMRRAttributeSet, HealthRegenRate);
 }
 
-void UMRRAttributeSet::OnRep_PhysicalDamageIncrease()
+void UMRRAttributeSet::OnRep_OutgoingPhysicalDamageMultiplier()
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(UMRRAttributeSet, PhysicalDamageIncrease);
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UMRRAttributeSet, OutgoingPhysicalDamageMultiplier);
 }
 
 void UMRRAttributeSet::OnRep_AttackSpeed()
@@ -100,9 +97,9 @@ void UMRRAttributeSet::OnRep_AttackSpeed()
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UMRRAttributeSet, AttackSpeed);
 }
 
-void UMRRAttributeSet::OnRep_MagicalDamageIncrease()
+void UMRRAttributeSet::OnRep_OutgoingMagicalDamageMultiplier()
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(UMRRAttributeSet, MagicalDamageIncrease);
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UMRRAttributeSet, OutgoingMagicalDamageMultiplier);
 }
 
 void UMRRAttributeSet::OnRep_CastSpeed()
@@ -110,14 +107,14 @@ void UMRRAttributeSet::OnRep_CastSpeed()
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UMRRAttributeSet, CastSpeed);
 }
 
-void UMRRAttributeSet::OnRep_PhysicalDamageReduction()
+void UMRRAttributeSet::OnRep_IncomingPhysicalDamageMultiplier()
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(UMRRAttributeSet, PhysicalDamageReduction);
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UMRRAttributeSet, IncomingPhysicalDamageMultiplier);
 }
 
-void UMRRAttributeSet::OnRep_MagicalDamageReduction()
+void UMRRAttributeSet::OnRep_IncomingMagicalDamageMultiplier()
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(UMRRAttributeSet, MagicalDamageReduction);
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UMRRAttributeSet, IncomingMagicalDamageMultiplier);
 }
 
 void UMRRAttributeSet::OnRep_Weight()

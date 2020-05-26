@@ -2,9 +2,9 @@
 
 
 #include "MRRPlayerState.h"
-#include "Characters/MRRAttributeSet.h"
-#include "Characters/MRRAbilitySystemComponent.h"
-#include "Characters/MRRHeroCharacter.h"
+#include "Characters/Abilities/AttributeSets/MRRAttributeSet.h"
+#include "Characters/Abilities/MRRAbilitySystemComponent.h"
+#include "Characters/Heroes/MRRHeroCharacter.h"
 #include "Player/MRRPlayerController.h"
 #include "UI/MRRFloatingStatusBarWidget.h"
 #include "UI/MRRHUDWidget.h"
@@ -84,9 +84,9 @@ float AMRRPlayerState::GetHealthRegenRate() const
 * Attack
 */
 
-float AMRRPlayerState::GetPhysicalDamageIncrease() const
+float AMRRPlayerState::GetOutgoingPhysicalDamageMultiplier() const
 {
-	return AttributeSet->GetPhysicalDamageIncrease();
+	return AttributeSet->GetOutgoingPhysicalDamageMultiplier();
 }
 
 float AMRRPlayerState::GetAttackSpeed() const
@@ -94,9 +94,9 @@ float AMRRPlayerState::GetAttackSpeed() const
 	return AttributeSet->GetAttackSpeed();
 }
 
-float AMRRPlayerState::GetMagicalDamageIncrease() const
+float AMRRPlayerState::GetOutgoingMagicalDamageMultiplier() const
 {
-	return AttributeSet->GetMagicalDamageIncrease();
+	return AttributeSet->GetOutgoingMagicalDamageMultiplier();
 }
 
 float AMRRPlayerState::GetCastSpeed() const
@@ -108,14 +108,14 @@ float AMRRPlayerState::GetCastSpeed() const
 * Defence
 */
 
-float AMRRPlayerState::GetPhysicalDamageReduction() const
+float AMRRPlayerState::GetIncomingPhysicalDamageMultiplier() const
 {
-	return AttributeSet->GetPhysicalDamageReduction();
+	return AttributeSet->GetIncomingPhysicalDamageMultiplier();
 }
 
-float AMRRPlayerState::GetMagicalDamageReduction() const
+float AMRRPlayerState::GetIncomingMagicalDamageMultiplier() const
 {
-	return AttributeSet->GetMagicalDamageReduction();
+	return AttributeSet->GetIncomingMagicalDamageMultiplier();
 }
 
 /**
@@ -177,13 +177,13 @@ void AMRRPlayerState::BeginPlay()
 		MaxHealthChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetMaxHealthAttribute()).AddUObject(this, &AMRRPlayerState::MaxHealthChanged);
 		HealthRegenRateChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetHealthRegenRateAttribute()).AddUObject(this, &AMRRPlayerState::HealthRegenRateChanged);
 		
-		PhysicalDamageIncreaseChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetPhysicalDamageIncreaseAttribute()).AddUObject(this, &AMRRPlayerState::PhysicalDamageIncreaseChanged);
+		OutgoingPhysicalDamageMultiplierChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetOutgoingPhysicalDamageMultiplierAttribute()).AddUObject(this, &AMRRPlayerState::OutgoingPhysicalDamageMultiplierChanged);
 		AttackSpeedChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetAttackSpeedAttribute()).AddUObject(this, &AMRRPlayerState::AttackSpeedChanged);
-		MagicalDamageIncreaseChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetMagicalDamageIncreaseAttribute()).AddUObject(this, &AMRRPlayerState::MagicalDamageIncreaseChanged);
+		OutgoingMagicalDamageMultiplierChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetOutgoingMagicalDamageMultiplierAttribute()).AddUObject(this, &AMRRPlayerState::OutgoingMagicalDamageMultiplierChanged);
 		CastSpeedChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetCastSpeedAttribute()).AddUObject(this, &AMRRPlayerState::CastSpeedChanged);
 		
-		PhysicalDamageReductionChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetPhysicalDamageReductionAttribute()).AddUObject(this, &AMRRPlayerState::PhysicalDamageReductionChanged);
-		MagicalDamageReductionChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetMagicalDamageReductionAttribute()).AddUObject(this, &AMRRPlayerState::MagicalDamageReductionChanged);
+		IncomingPhysicalDamageMultiplierChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetIncomingPhysicalDamageMultiplierAttribute()).AddUObject(this, &AMRRPlayerState::IncomingPhysicalDamageMultiplierChanged);
+		IncomingMagicalDamageMultiplierChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetIncomingMagicalDamageMultiplierAttribute()).AddUObject(this, &AMRRPlayerState::IncomingMagicalDamageMultiplierChanged);
 		
 		WeightChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetWeightAttribute()).AddUObject(this, &AMRRPlayerState::WeightChanged);
 		MaxWeightChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetMaxWeightAttribute()).AddUObject(this, &AMRRPlayerState::MaxWeightChanged);
@@ -272,7 +272,7 @@ void AMRRPlayerState::HealthRegenRateChanged(const FOnAttributeChangeData& Data)
 	}
 }
 
-void AMRRPlayerState::PhysicalDamageIncreaseChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::OutgoingPhysicalDamageMultiplierChanged(const FOnAttributeChangeData& Data)
 {
 	float PhysicalDamageIncrease = Data.NewValue;
 
@@ -304,7 +304,7 @@ void AMRRPlayerState::AttackSpeedChanged(const FOnAttributeChangeData& Data)
 	}
 }
 
-void AMRRPlayerState::MagicalDamageIncreaseChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::OutgoingMagicalDamageMultiplierChanged(const FOnAttributeChangeData& Data)
 {
 	float MagicalDamageIncrease = Data.NewValue;
 
@@ -336,7 +336,7 @@ void AMRRPlayerState::CastSpeedChanged(const FOnAttributeChangeData& Data)
 	}
 }
 
-void AMRRPlayerState::PhysicalDamageReductionChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::IncomingPhysicalDamageMultiplierChanged(const FOnAttributeChangeData& Data)
 {
 	float PhysicalDamageReduction = Data.NewValue;
 
@@ -352,7 +352,7 @@ void AMRRPlayerState::PhysicalDamageReductionChanged(const FOnAttributeChangeDat
 	}
 }
 
-void AMRRPlayerState::MagicalDamageReductionChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::IncomingMagicalDamageMultiplierChanged(const FOnAttributeChangeData& Data)
 {
 	float MagicalDamageReduction = Data.NewValue;
 
@@ -493,5 +493,19 @@ void AMRRPlayerState::GravityZChanged(const FOnAttributeChangeData& Data)
 		{
 			HUD->SetGravityZ(GravityZ);
 		}
+	}
+}
+
+void AMRRPlayerState::StunTagChanged(const FGameplayTag CallbackTag, int32 NewCount)
+{
+	if (NewCount > 0)
+	{
+		FGameplayTagContainer AbilityTagsToCancel;
+		AbilityTagsToCancel.AddTag(FGameplayTag::RequestGameplayTag(FName("Ability")));
+
+		FGameplayTagContainer AbilityTagsToIgnore;
+		AbilityTagsToIgnore.AddTag(FGameplayTag::RequestGameplayTag(FName("Ability.NotCanceledByStun")));
+
+		AbilitySystemComponent->CancelAbilities(&AbilityTagsToCancel, &AbilityTagsToIgnore);
 	}
 }

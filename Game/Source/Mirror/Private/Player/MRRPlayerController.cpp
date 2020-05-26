@@ -3,7 +3,8 @@
 
 #include "MRRPlayerController.h"
 #include "AbilitySystemComponent.h"
-#include "Characters/MRRHeroCharacter.h"
+#include "Characters/Heroes/MRRHeroCharacter.h"
+#include "Characters/Abilities/AttributeSets/MRRAttributeSet.h"
 #include "Player/MRRPlayerState.h"
 #include "UI/MRRDamageTextWidgetComponent.h"
 #include "UI/MRRHUDWidget.h"
@@ -44,13 +45,13 @@ void AMRRPlayerController::CreateHUD()
 	UIHUDWidget->SetHealthPercentage(PS->GetHealth() / PS->GetMaxHealth());
 	UIHUDWidget->SetHealthRegenRate(PS->GetHealthRegenRate());
 
-	UIHUDWidget->SetPhysicalDamageIncrease(PS->GetPhysicalDamageIncrease());
+	UIHUDWidget->SetPhysicalDamageIncrease(PS->GetOutgoingPhysicalDamageMultiplier());
 	UIHUDWidget->SetAttackSpeed(PS->GetAttackSpeed());
-	UIHUDWidget->SetMagicalDamageIncrease(PS->GetMagicalDamageIncrease());
+	UIHUDWidget->SetMagicalDamageIncrease(PS->GetOutgoingMagicalDamageMultiplier());
 	UIHUDWidget->SetCastSpeed(PS->GetCastSpeed());
 
-	UIHUDWidget->SetPhysicalDamageReduction(PS->GetPhysicalDamageReduction());
-	UIHUDWidget->SetMagicalDamageReduction(PS->GetMagicalDamageReduction());
+	UIHUDWidget->SetPhysicalDamageReduction(PS->GetIncomingPhysicalDamageMultiplier());
+	UIHUDWidget->SetMagicalDamageReduction(PS->GetIncomingMagicalDamageMultiplier());
 
 	UIHUDWidget->SetWeight(PS->GetWeight());
 	UIHUDWidget->SetMaxWeight(PS->GetMaxWeight());
@@ -119,4 +120,33 @@ void AMRRPlayerController::OnRep_PlayerState()
 
 	// For edge cases where the PlayerState is repped before the Hero is possessed.
 	CreateHUD();
+}
+
+void AMRRPlayerController::ClientSetControlRotation_Implementation(FRotator NewRotation)
+{
+	SetControlRotation(NewRotation);
+}
+
+bool AMRRPlayerController::ClientSetControlRotation_Validate(FRotator NewRotation)
+{
+	return true;
+}
+
+void AMRRPlayerController::Kill()
+{
+	ServerKill();
+}
+
+void AMRRPlayerController::ServerKill_Implementation()
+{
+	AMRRPlayerState* PS = GetPlayerState<AMRRPlayerState>();
+	if (PS)
+	{
+		PS->GetAttributeSet()->SetHealth(0.0f);
+	}
+}
+
+bool AMRRPlayerController::ServerKill_Validate()
+{
+	return true;
 }

@@ -9,7 +9,6 @@
 #include "Mirror/Mirror.h"
 #include "MRRCharacter.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCharacterBaseHitReactDelegate, EMRRHitReactDirection, Direction);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCharacterDiedDelegate, AMRRCharacter*, Character);
 
 UCLASS()
@@ -20,10 +19,6 @@ class MIRROR_API AMRRCharacter : public ACharacter, public IAbilitySystemInterfa
 public:
 	// Sets default values for this character's properties
 	AMRRCharacter(const class FObjectInitializer& ObjectInitializer);
-
-	// Set the Hit React direction in the Animation Blueprint
-	UPROPERTY(BlueprintAssignable, Category = "Mirror|MRRCharacter")
-	FCharacterBaseHitReactDelegate ShowHitReact;
 
 	UPROPERTY(BlueprintAssignable, Category = "Mirror|MRRCharacter")
 	FCharacterDiedDelegate OnCharacterDied;
@@ -40,15 +35,6 @@ public:
 
 	// Removes all CharacterAbilities. Can only be called by the Server. Removing on the Server will remove from Client too.
 	virtual void RemoveCharacterAbilities();
-
-	UFUNCTION(BlueprintCallable)
-	EMRRHitReactDirection GetHitReactDirection(const FVector& ImpactPoint);
-
-	UFUNCTION(NetMulticast, Reliable, WithValidation)
-	virtual void PlayHitReact(FGameplayTag HitDirection, AActor* DamageCauser);
-	virtual void PlayHitReact_Implementation(FGameplayTag HitDirection, AActor* DamageCauser);
-	virtual bool PlayHitReact_Validate(FGameplayTag HitDirection, AActor* DamageCauser);
-
 
 	/**
 	* Getters for attributes from AttributeSet
@@ -75,24 +61,21 @@ public:
 	virtual void FinishDying();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+
+	FGameplayTag DeadTag;
+	FGameplayTag EffectRemoveOnDeathTag;
 
 	// Instead of TWeakObjectPtrs, you could just have UPROPERTY() hard references or no references at all and just call
 	// GetAbilitySystem() and make a GetAttributeSet() that can read from the PlayerState or from child classes.
 	// Just make sure you test if the pointer is valid before using.
 	// I opted for TWeakObjectPtrs because I didn't want a shared hard reference here and I didn't want an extra function call of getting
 	// the ASC/AttributeSet from the PlayerState or child classes every time I referenced them in this base class.
+	
+	UPROPERTY()
+	class UMRRAbilitySystemComponent* AbilitySystemComponent;
 
-	TWeakObjectPtr<class UMRRAbilitySystemComponent> AbilitySystemComponent;
-	TWeakObjectPtr<class UMRRAttributeSet> AttributeSet;
-
-	FGameplayTag HitDirectionFrontTag;
-	FGameplayTag HitDirectionBackTag;
-	FGameplayTag HitDirectionRightTag;
-	FGameplayTag HitDirectionLeftTag;
-	FGameplayTag DeadTag;
-	FGameplayTag EffectRemoveOnDeathTag;
+	UPROPERTY()
+	class UMRRAttributeSet* AttributeSet;
 
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Mirror|MRRCharacter")
 	FText CharacterName;
@@ -114,6 +97,9 @@ protected:
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Mirror|Abilities")
 	TArray<TSubclassOf<class UGameplayEffect>> StartupEffects;
 
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
 	// Grant abilities on the Server. The Ability Specs will be replicated to the owning client.
 	virtual void AddCharacterAbilities();
 
@@ -124,12 +110,10 @@ protected:
 
 	virtual void AddStartupEffects();
 
-
 	/**
 	* Setters for Attributes. Only use these in special cases like Respawning, otherwise use a GE to change Attributes.
 	* These change the Attribute's Base Value.
 	*/
 
 	virtual void SetHealth(float Health);
-
 };

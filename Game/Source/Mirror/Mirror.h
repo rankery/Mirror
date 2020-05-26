@@ -8,20 +8,10 @@
 #define ACTOR_ROLE_FSTRING *(FindObject<UEnum>(ANY_PACKAGE, TEXT("ENetRole"), true)->GetNameStringByValue(GetLocalRole()))
 #define GET_ACTOR_ROLE_FSTRING(Actor) *(FindObject<UEnum>(ANY_PACKAGE, TEXT("ENetRole"), true)->GetNameStringByValue(Actor->GetLocalRole()))
 
-UENUM(BlueprintType)
-enum class EMRRHitReactDirection : uint8
-{
-	// 0
-	None			UMETA(DisplayName = "None"),
-	// 1
-	Left 			UMETA(DisplayName = "Left"),
-	// 2
-	Front 			UMETA(DisplayName = "Front"),
-	// 3
-	Right			UMETA(DisplayName = "Right"),
-	// 4
-	Back			UMETA(DisplayName = "Back")
-};
+#define COLLISION_ABILITY						ECC_GameTraceChannel1
+#define COLLISION_PROJECTILE					ECC_GameTraceChannel2
+#define COLLISION_ABILITYOVERLAPPROJECTILE		ECC_GameTraceChannel3
+#define COLLISION_PICKUP						ECC_GameTraceChannel4
 
 UENUM(BlueprintType)
 enum class EMRRAbilityInputID : uint8
@@ -45,5 +35,7 @@ enum class EMRRAbilityInputID : uint8
 	// 8 Sprint
 	Sprint			UMETA(DisplayName = "Slink"),
 	// 9 Jump
-	Jump			UMETA(DisplayName = "Jump")
+	Jump			UMETA(DisplayName = "Jump"),
+	// 10 Next Spell
+	NextSpell		UMETA(DisplayName = " Next Spell")
 };

@@ -1,23 +1,104 @@
 // Copyright (c) Improbable Worlds Ltd, All Rights Reserved
 
 #include "MirrorGameMode.h"
+#include "Engine/World.h"
+#include "Characters/Heroes/MRRHeroCharacter.h"
+#include "Player/MRRPlayerController.h"
+#include "Player/MRRPlayerState.h"
+#include "GameFramework/SpectatorPawn.h"
+#include "Kismet/GameplayStatics.h"
+#include "TimerManager.h"
 #include "UObject/ConstructorHelpers.h"
 
 AMirrorGameMode::AMirrorGameMode()
 {
-	// Set default pawn class to our Blueprint character.
-	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/StarterProject/Characters/PlayerCharacter_BP"));
-	static ConstructorHelpers::FClassFinder<APawn> SimulatedPawnBPClass(TEXT("/Game/StarterProject/Characters/SimulatedPlayers/SimulatedPlayerCharacter_BP"));
+	RespawnDelay = 5.0f;
 
-	if (PlayerPawnBPClass.Class != NULL)
+	HeroClass = StaticLoadClass(UObject::StaticClass(), nullptr, TEXT("/Game/Mirror/Characters/BP_HeroCharacter.BP_HeroCharacter_C"));
+	if (!HeroClass)
 	{
-		DefaultPawnClass = PlayerPawnBPClass.Class;
+		UE_LOG(LogTemp, Error, TEXT("%s() Failed to find HeroClass. If it was moved, please update the reference location in C++."), *FString(__FUNCTION__));
 	}
-	if (SimulatedPawnBPClass.Class != NULL)
+}
+
+void AMirrorGameMode::HeroDied(AController* Controller)
+{
+	FActorSpawnParameters SpawnParameters;
+	SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+	ASpectatorPawn* SpectatorPawn = GetWorld()->SpawnActor<ASpectatorPawn>(SpectatorClass, Controller->GetPawn()->GetActorTransform(), SpawnParameters);
+
+	Controller->UnPossess();
+	Controller->Possess(SpectatorPawn);
+
+	FTimerHandle RespawnTimerHandle;
+	FTimerDelegate RespawnDelegate;
+
+	RespawnDelegate = FTimerDelegate::CreateUObject(this, &AMirrorGameMode::RespawnHero, Controller);
+	GetWorldTimerManager().SetTimer(RespawnTimerHandle, RespawnDelegate, RespawnDelay, false);
+
+	AMRRPlayerController* PC = Cast<AMRRPlayerController>(Controller);
+	if (PC)
 	{
-		SimulatedPawnClass = SimulatedPawnBPClass.Class;
+		PC->SetRespawnCountdown(RespawnDelay);
 	}
-	
-	// Seamless Travel is not currently supported in SpatialOS [UNR-897]
-	bUseSeamlessTravel = false;
+}
+
+void AMirrorGameMode::BeginPlay()
+{
+	Super::BeginPlay();
+
+	// Get the enemy hero spawn point
+	TArray<AActor*> Actors;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AActor::StaticClass(), Actors);
+	for (AActor* Actor : Actors)
+	{
+		if (Actor->GetName() == FString("EnemyHeroSpawn"))
+		{
+			EnemySpawnPoint = Actor;
+			break;
+		}
+	}
+
+	if (!EnemySpawnPoint)
+	{
+		UE_LOG(LogTemp, Error, TEXT("%s EnemySpawnPoint is null."), *FString(__FUNCTION__));
+	}
+}
+
+void AMirrorGameMode::RespawnHero(AController* Controller)
+{
+	if (Controller->IsPlayerController())
+	{
+		// Respawn player hero
+		AActor* PlayerStart = FindPlayerStart(Controller);
+
+		FActorSpawnParameters SpawnParameters;
+		SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+
+		AMRRHeroCharacter* Hero = GetWorld()->SpawnActor<AMRRHeroCharacter>(HeroClass, PlayerStart->GetActorLocation(), PlayerStart->GetActorRotation(), SpawnParameters);
+
+		APawn* OldSpectatorPawn = Controller->GetPawn();
+		Controller->UnPossess();
+		OldSpectatorPawn->Destroy();
+		Controller->Possess(Hero);
+
+		AMRRPlayerController* PC = Cast<AMRRPlayerController>(Controller);
+		if (PC)
+		{
+			PC->ClientSetControlRotation(PlayerStart->GetActorRotation());
+		}
+	}
+	else
+	{
+		// Respawn AI hero
+		FActorSpawnParameters SpawnParameters;
+		SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+
+		AMRRHeroCharacter* Hero = GetWorld()->SpawnActor<AMRRHeroCharacter>(HeroClass, EnemySpawnPoint->GetActorTransform(), SpawnParameters);
+
+		APawn* OldSpectatorPawn = Controller->GetPawn();
+		Controller->UnPossess();
+		OldSpectatorPawn->Destroy();
+		Controller->Possess(Hero);
+	}
 }

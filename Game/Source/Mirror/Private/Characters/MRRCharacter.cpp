@@ -2,9 +2,9 @@
 
 
 #include "MRRCharacter.h"
-#include "Characters/MRRAttributeSet.h"
+#include "Characters/Abilities/AttributeSets/MRRAttributeSet.h"
 #include "Characters/Abilities/MRRGameplayAbility.h"
-#include "Characters/MRRAbilitySystemComponent.h"
+#include "Characters/Abilities/MRRAbilitySystemComponent.h"
 #include "Characters/MRRCharacterMovementComponent.h"
 #include "Components/CapsuleComponent.h"
 //#include "UI/MRRDamageTextWidgetComponent.h"
@@ -21,17 +21,14 @@ AMRRCharacter::AMRRCharacter(const class FObjectInitializer& ObjectInitializer) 
 	bAlwaysRelevant = true;
 
 	// Cache tags
-	HitDirectionFrontTag = FGameplayTag::RequestGameplayTag(FName("Effect.HitReact.Front"));
-	HitDirectionBackTag = FGameplayTag::RequestGameplayTag(FName("Effect.HitReact.Back"));
-	HitDirectionRightTag = FGameplayTag::RequestGameplayTag(FName("Effect.HitReact.Right"));
-	HitDirectionLeftTag = FGameplayTag::RequestGameplayTag(FName("Effect.HitReact.Left"));
+	
 	DeadTag = FGameplayTag::RequestGameplayTag(FName("State.Dead"));
 	EffectRemoveOnDeathTag = FGameplayTag::RequestGameplayTag(FName("Effect.RemoveOnDeath"));
 }
 
 UAbilitySystemComponent* AMRRCharacter::GetAbilitySystemComponent() const
 {
-	return AbilitySystemComponent.Get();
+	return AbilitySystemComponent;
 }
 
 bool AMRRCharacter::IsAlive() const
@@ -46,7 +43,7 @@ int32 AMRRCharacter::GetAbilityLevel(EMRRAbilityInputID AbilityID) const
 
 void AMRRCharacter::RemoveCharacterAbilities()
 {
-	if (GetLocalRole() != ROLE_Authority || !AbilitySystemComponent.IsValid() || !AbilitySystemComponent->CharacterAbilitiesGiven)
+	if (GetLocalRole() != ROLE_Authority || !IsValid(AbilitySystemComponent) || !AbilitySystemComponent->CharacterAbilitiesGiven)
 	{
 		return;
 	}
@@ -70,76 +67,10 @@ void AMRRCharacter::RemoveCharacterAbilities()
 	AbilitySystemComponent->CharacterAbilitiesGiven = false;
 }
 
-EMRRHitReactDirection AMRRCharacter::GetHitReactDirection(const FVector& ImpactPoint)
-{
-	const FVector& ActorLocation = GetActorLocation();
-	// PointPlaneDist is super cheap - 1 vector subtraction, 1 dot product.
-	float DistanceToFrontBackPlane = FVector::PointPlaneDist(ImpactPoint, ActorLocation, GetActorRightVector());
-	float DistanceToRightLeftPlane = FVector::PointPlaneDist(ImpactPoint, ActorLocation, GetActorForwardVector());
-
-
-	if (FMath::Abs(DistanceToFrontBackPlane) <= FMath::Abs(DistanceToRightLeftPlane))
-	{
-		// Determine if Front or Back
-
-		// Can see if it's left or right of Left/Right plane which would determine Front or Back
-		if (DistanceToRightLeftPlane >= 0)
-		{
-			return EMRRHitReactDirection::Front;
-		}
-		else
-		{
-			return EMRRHitReactDirection::Back;
-		}
-	}
-	else
-	{
-		// Determine if Right or Left
-
-		if (DistanceToFrontBackPlane >= 0)
-		{
-			return EMRRHitReactDirection::Right;
-		}
-		else
-		{
-			return EMRRHitReactDirection::Left;
-		}
-	}
-
-	return EMRRHitReactDirection::Front;
-}
-
-void AMRRCharacter::PlayHitReact_Implementation(FGameplayTag HitDirection, AActor* DamageCauser)
-{
-	if (IsAlive())
-	{
-		if (HitDirection == HitDirectionLeftTag)
-		{
-			ShowHitReact.Broadcast(EMRRHitReactDirection::Left);
-		}
-		else if (HitDirection == HitDirectionFrontTag)
-		{
-			ShowHitReact.Broadcast(EMRRHitReactDirection::Front);
-		}
-		else if (HitDirection == HitDirectionRightTag)
-		{
-			ShowHitReact.Broadcast(EMRRHitReactDirection::Right);
-		}
-		else if (HitDirection == HitDirectionBackTag)
-		{
-			ShowHitReact.Broadcast(EMRRHitReactDirection::Back);
-		}
-	}
-}
-
-bool AMRRCharacter::PlayHitReact_Validate(FGameplayTag HitDirection, AActor* DamageCauser)
-{
-	return true;
-}
 
 float AMRRCharacter::GetHealth() const
 {
-	if (AttributeSet.IsValid())
+	if (IsValid(AttributeSet))
 	{
 		return AttributeSet->GetHealth();
 	}
@@ -149,7 +80,7 @@ float AMRRCharacter::GetHealth() const
 
 float AMRRCharacter::GetMaxHealth() const
 {
-	if (AttributeSet.IsValid())
+	if (IsValid(AttributeSet))
 	{
 		return AttributeSet->GetMaxHealth();
 	}
@@ -159,7 +90,7 @@ float AMRRCharacter::GetMaxHealth() const
 
 float AMRRCharacter::GetMovementSpeed() const
 {
-	if (AttributeSet.IsValid())
+	if (IsValid(AttributeSet))
 	{
 		return AttributeSet->GetMovementSpeed();
 	}
@@ -169,9 +100,9 @@ float AMRRCharacter::GetMovementSpeed() const
 
 float AMRRCharacter::GetMovementSpeedBaseValue() const
 {
-	if (AttributeSet.IsValid())
+	if (IsValid(AttributeSet))
 	{
-		return AttributeSet->GetMovementSpeedAttribute().GetGameplayAttributeData(AttributeSet.Get())->GetBaseValue();
+		return AttributeSet->GetMovementSpeedAttribute().GetGameplayAttributeData(AttributeSet)->GetBaseValue();
 	}
 
 	return 0.0f;
@@ -189,7 +120,7 @@ void AMRRCharacter::Die()
 
 	OnCharacterDied.Broadcast(this);
 
-	if (AbilitySystemComponent.IsValid())
+	if (IsValid(AbilitySystemComponent))
 	{
 		AbilitySystemComponent->CancelAllAbilities();
 
@@ -224,7 +155,7 @@ void AMRRCharacter::BeginPlay()
 void AMRRCharacter::AddCharacterAbilities()
 {
 	// Grant abilities, but only on the server	
-	if (GetLocalRole() != ROLE_Authority || !AbilitySystemComponent.IsValid() || AbilitySystemComponent->CharacterAbilitiesGiven)
+	if (GetLocalRole() != ROLE_Authority || !IsValid(AbilitySystemComponent) || AbilitySystemComponent->CharacterAbilitiesGiven)
 	{
 		return;
 	}
@@ -240,7 +171,7 @@ void AMRRCharacter::AddCharacterAbilities()
 
 void AMRRCharacter::InitializeAttributes()
 {
-	if (!AbilitySystemComponent.IsValid())
+	if (!IsValid(AbilitySystemComponent))
 	{
 		return;
 	}
@@ -258,13 +189,13 @@ void AMRRCharacter::InitializeAttributes()
 	FGameplayEffectSpecHandle NewHandle = AbilitySystemComponent->MakeOutgoingSpec(DefaultAttributes, 1, EffectContext);
 	if (NewHandle.IsValid())
 	{
-		FActiveGameplayEffectHandle ActiveGEHandle = AbilitySystemComponent->ApplyGameplayEffectSpecToTarget(*NewHandle.Data.Get(), AbilitySystemComponent.Get());
+		FActiveGameplayEffectHandle ActiveGEHandle = AbilitySystemComponent->ApplyGameplayEffectSpecToTarget(*NewHandle.Data.Get(), AbilitySystemComponent);
 	}
 }
 
 void AMRRCharacter::AddStartupEffects()
 {
-	if (GetLocalRole() != ROLE_Authority || !AbilitySystemComponent.IsValid() || AbilitySystemComponent->StartupEffectsApplied)
+	if (GetLocalRole() != ROLE_Authority || !IsValid(AbilitySystemComponent)  || AbilitySystemComponent->StartupEffectsApplied)
 	{
 		return;
 	}
@@ -277,7 +208,7 @@ void AMRRCharacter::AddStartupEffects()
 		FGameplayEffectSpecHandle NewHandle = AbilitySystemComponent->MakeOutgoingSpec(GameplayEffect, 1, EffectContext);
 		if (NewHandle.IsValid())
 		{
-			FActiveGameplayEffectHandle ActiveGEHandle = AbilitySystemComponent->ApplyGameplayEffectSpecToTarget(*NewHandle.Data.Get(), AbilitySystemComponent.Get());
+			FActiveGameplayEffectHandle ActiveGEHandle = AbilitySystemComponent->ApplyGameplayEffectSpecToTarget(*NewHandle.Data.Get(), AbilitySystemComponent);
 		}
 	}
 
@@ -286,7 +217,7 @@ void AMRRCharacter::AddStartupEffects()
 
 void AMRRCharacter::SetHealth(float Health)
 {
-	if (AttributeSet.IsValid())
+	if (IsValid(AttributeSet))
 	{
 		AttributeSet->SetHealth(Health);
 	}
