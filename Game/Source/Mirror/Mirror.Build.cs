@@ -9,25 +9,24 @@ public class Mirror : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 
-        PublicDependencyModuleNames.AddRange(
-             new string[]
-             {
-        "Core",
-        "CoreUObject",
-        "Engine",
-        "InputCore",
-        "Sockets",
-        "OnlineSubsystemUtils",
-        "PhysXVehicles",
-        "SpatialGDK",
-        "HeadMountedDisplay"
-             });
+        PublicDependencyModuleNames.AddRange(new string[]
+         {
+            "Core",
+            "CoreUObject",
+            "Engine",
+            "InputCore",
+            "Sockets",
+            "OnlineSubsystemUtils",
+            "PhysXVehicles",
+            "SpatialGDK",
+            "HeadMountedDisplay"
+         });
         PrivateDependencyModuleNames.AddRange(new string[] {
-           "Slate",
-           "SlateCore",
-           "GameplayAbilities",
-           "GameplayTags",
-           "GameplayTasks"
+            "Slate",
+            "SlateCore",
+            "GameplayAbilities",
+            "GameplayTags",
+            "GameplayTasks"
           });
-            }
+     }
 }

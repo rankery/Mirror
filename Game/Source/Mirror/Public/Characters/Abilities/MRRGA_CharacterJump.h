@@ -1,19 +1,14 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
 #include "Characters/Abilities/MRRGameplayAbility.h"
 #include "MRRGA_CharacterJump.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class MIRROR_API UMRRGA_CharacterJump : public UMRRGameplayAbility
 {
 	GENERATED_BODY()
-	
+
 public:
 	UMRRGA_CharacterJump();
 

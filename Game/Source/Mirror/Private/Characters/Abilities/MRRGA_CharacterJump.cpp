@@ -1,8 +1,5 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
-#include "MRRGA_CharacterJump.h"
-#include "Characters/MRRCharacter.h"
+#include "Characters/Abilities/MRRGA_CharacterJump.h"
+#include "Characters/MRRCharacterBase.h"
 #include "Mirror/Mirror.h"
 
 UMRRGA_CharacterJump::UMRRGA_CharacterJump()
@@ -10,9 +7,10 @@ UMRRGA_CharacterJump::UMRRGA_CharacterJump()
 	AbilityInputID = EMRRAbilityInputID::Jump;
 	InstancingPolicy = EGameplayAbilityInstancingPolicy::NonInstanced;
 	AbilityTags.AddTag(FGameplayTag::RequestGameplayTag(FName("Ability.Jump")));
+
 }
 
-void UMRRGA_CharacterJump::ActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, const FGameplayEventData* TriggerEventData)
+void UMRRGA_CharacterJump::ActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo * ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, const FGameplayEventData * TriggerEventData)
 {
 	if (HasAuthorityOrPredictionKey(ActorInfo, &ActivationInfo))
 	{
@@ -21,23 +19,23 @@ void UMRRGA_CharacterJump::ActivateAbility(const FGameplayAbilitySpecHandle Hand
 			EndAbility(CurrentSpecHandle, CurrentActorInfo, CurrentActivationInfo, true, true);
 		}
 
-		ACharacter* Character = CastChecked<ACharacter>(ActorInfo->AvatarActor.Get());
+		ACharacter * Character = CastChecked<ACharacter>(ActorInfo->AvatarActor.Get());
 		Character->Jump();
 	}
 }
 
-bool UMRRGA_CharacterJump::CanActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayTagContainer* SourceTags, const FGameplayTagContainer* TargetTags, OUT FGameplayTagContainer* OptionalRelevantTags) const
+bool UMRRGA_CharacterJump::CanActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo * ActorInfo, const FGameplayTagContainer * SourceTags, const FGameplayTagContainer * TargetTags, OUT FGameplayTagContainer * OptionalRelevantTags) const
 {
 	if (!Super::CanActivateAbility(Handle, ActorInfo, SourceTags, TargetTags, OptionalRelevantTags))
 	{
 		return false;
 	}
 
-	const AMRRCharacter* Character = CastChecked<AMRRCharacter>(ActorInfo->AvatarActor.Get(), ECastCheckedType::NullAllowed);
+	const AMRRCharacterBase* Character = CastChecked<AMRRCharacterBase>(ActorInfo->AvatarActor.Get(), ECastCheckedType::NullAllowed);
 	return Character && Character->CanJump();
 }
 
-void UMRRGA_CharacterJump::InputReleased(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo)
+void UMRRGA_CharacterJump::InputReleased(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo * ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo)
 {
 	if (ActorInfo != NULL && ActorInfo->AvatarActor != NULL)
 	{
@@ -45,14 +43,7 @@ void UMRRGA_CharacterJump::InputReleased(const FGameplayAbilitySpecHandle Handle
 	}
 }
 
-// Epic's comment
-/**
- *	Canceling an non instanced ability is tricky. Right now this works for Jump since there is nothing that can go wrong by calling
- *	StopJumping() if you aren't already jumping. If we had a montage playing non instanced ability, it would need to make sure the
- *	Montage that *it* played was still playing, and if so, to cancel it. If this is something we need to support, we may need some
- *	light weight data structure to represent 'non intanced abilities in action' with a way to cancel/end them.
- */
-void UMRRGA_CharacterJump::CancelAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, bool bReplicateCancelAbility)
+void UMRRGA_CharacterJump::CancelAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo * ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, bool bReplicateCancelAbility)
 {
 	if (ScopeLockCount > 0)
 	{
@@ -62,6 +53,6 @@ void UMRRGA_CharacterJump::CancelAbility(const FGameplayAbilitySpecHandle Handle
 
 	Super::CancelAbility(Handle, ActorInfo, ActivationInfo, bReplicateCancelAbility);
 
-	ACharacter* Character = CastChecked<ACharacter>(ActorInfo->AvatarActor.Get());
+	ACharacter * Character = CastChecked<ACharacter>(ActorInfo->AvatarActor.Get());
 	Character->StopJumping();
 }

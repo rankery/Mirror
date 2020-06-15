@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -8,13 +6,11 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FReceivedDamageDelegate, UMRRAbilitySystemComponent*, SourceASC, float, UnmitigatedDamage, float, MitigatedDamage);
 
-/**
- * 
- */
 UCLASS()
 class MIRROR_API UMRRAbilitySystemComponent : public UAbilitySystemComponent
 {
 	GENERATED_BODY()
+	
 public:
 	bool CharacterAbilitiesGiven = false;
 	bool StartupEffectsApplied = false;

@@ -1,17 +1,12 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
-#include "MRRPlayerController.h"
+#include "Player/MRRPlayerController.h"
 #include "AbilitySystemComponent.h"
 #include "Characters/Heroes/MRRHeroCharacter.h"
-#include "Characters/Abilities/AttributeSets/MRRAttributeSet.h"
 #include "Player/MRRPlayerState.h"
 #include "UI/MRRDamageTextWidgetComponent.h"
 #include "UI/MRRHUDWidget.h"
 
 void AMRRPlayerController::CreateHUD()
 {
-	// Only create once
 	if (UIHUDWidget)
 	{
 		return;
@@ -23,13 +18,11 @@ void AMRRPlayerController::CreateHUD()
 		return;
 	}
 
-	// Only create a HUD for local player
 	if (!IsLocalPlayerController())
 	{
 		return;
 	}
 
-	// Need a valid PlayerState to get attributes from
 	AMRRPlayerState* PS = GetPlayerState<AMRRPlayerState>();
 	if (!PS)
 	{
@@ -39,29 +32,19 @@ void AMRRPlayerController::CreateHUD()
 	UIHUDWidget = CreateWidget<UMRRHUDWidget>(this, UIHUDWidgetClass);
 	UIHUDWidget->AddToViewport();
 
-	// Set attributes
 	UIHUDWidget->SetCurrentHealth(PS->GetHealth());
 	UIHUDWidget->SetMaxHealth(PS->GetMaxHealth());
 	UIHUDWidget->SetHealthPercentage(PS->GetHealth() / PS->GetMaxHealth());
+	UIHUDWidget->SetCurrentMana(PS->GetMana());
+	UIHUDWidget->SetMaxMana(PS->GetMaxMana());
+	UIHUDWidget->SetManaPercentage(PS->GetMana() / PS->GetMaxMana());
 	UIHUDWidget->SetHealthRegenRate(PS->GetHealthRegenRate());
-
-	UIHUDWidget->SetPhysicalDamageIncrease(PS->GetOutgoingPhysicalDamageMultiplier());
-	UIHUDWidget->SetAttackSpeed(PS->GetAttackSpeed());
-	UIHUDWidget->SetMagicalDamageIncrease(PS->GetOutgoingMagicalDamageMultiplier());
-	UIHUDWidget->SetCastSpeed(PS->GetCastSpeed());
-
-	UIHUDWidget->SetPhysicalDamageReduction(PS->GetIncomingPhysicalDamageMultiplier());
-	UIHUDWidget->SetMagicalDamageReduction(PS->GetIncomingMagicalDamageMultiplier());
-
-	UIHUDWidget->SetWeight(PS->GetWeight());
-	UIHUDWidget->SetMaxWeight(PS->GetMaxWeight());
+	UIHUDWidget->SetManaRegenRate(PS->GetManaRegenRate());
+	UIHUDWidget->SetCurrentStamina(PS->GetStamina());
+	UIHUDWidget->SetMaxStamina(PS->GetMaxStamina());
+	UIHUDWidget->SetStaminaPercentage(PS->GetStamina() / PS->GetMaxStamina());
+	UIHUDWidget->SetStaminaRegenRate(PS->GetStaminaRegenRate());
 	UIHUDWidget->SetGold(PS->GetGold());
-
-	UIHUDWidget->SetMovementSpeed(PS->GetMovementSpeed());
-	UIHUDWidget->SetTimeModifier(PS->GetTimeModifier());
-	UIHUDWidget->SetGravityX(PS->GetGravityX());
-	UIHUDWidget->SetGravityY(PS->GetGravityY());
-	UIHUDWidget->SetGravityZ(PS->GetGravityZ());
 
 	DamageNumberClass = StaticLoadClass(UObject::StaticClass(), nullptr, TEXT("/Game/Mirror/UI/WC_DamageText.WC_DamageText_C"));
 	if (!DamageNumberClass)
@@ -70,12 +53,12 @@ void AMRRPlayerController::CreateHUD()
 	}
 }
 
-UMRRHUDWidget* AMRRPlayerController::GetHUD()
+UMRRHUDWidget * AMRRPlayerController::GetHUD()
 {
 	return UIHUDWidget;
 }
 
-void AMRRPlayerController::ShowDamageNumber_Implementation(float DamageAmount, AMRRCharacter* TargetCharacter)
+void AMRRPlayerController::ShowDamageNumber_Implementation(float DamageAmount, AMRRCharacterBase * TargetCharacter)
 {
 	UMRRDamageTextWidgetComponent* DamageText = NewObject<UMRRDamageTextWidgetComponent>(TargetCharacter, DamageNumberClass);
 	DamageText->RegisterComponent();
@@ -83,7 +66,7 @@ void AMRRPlayerController::ShowDamageNumber_Implementation(float DamageAmount, A
 	DamageText->SetDamageText(DamageAmount);
 }
 
-bool AMRRPlayerController::ShowDamageNumber_Validate(float DamageAmount, AMRRCharacter* TargetCharacter)
+bool AMRRPlayerController::ShowDamageNumber_Validate(float DamageAmount, AMRRCharacterBase * TargetCharacter)
 {
 	return true;
 }
@@ -101,15 +84,13 @@ bool AMRRPlayerController::SetRespawnCountdown_Validate(float RespawnTimeRemaini
 	return true;
 }
 
-// Server only
-void AMRRPlayerController::OnPossess(APawn* InPawn)
+void AMRRPlayerController::OnPossess(APawn * InPawn)
 {
 	Super::OnPossess(InPawn);
 
 	AMRRPlayerState* PS = GetPlayerState<AMRRPlayerState>();
 	if (PS)
 	{
-		// Init ASC with PS (Owner) and our new Pawn (AvatarActor)
 		PS->GetAbilitySystemComponent()->InitAbilityActorInfo(PS, InPawn);
 	}
 }
@@ -118,35 +99,5 @@ void AMRRPlayerController::OnRep_PlayerState()
 {
 	Super::OnRep_PlayerState();
 
-	// For edge cases where the PlayerState is repped before the Hero is possessed.
 	CreateHUD();
-}
-
-void AMRRPlayerController::ClientSetControlRotation_Implementation(FRotator NewRotation)
-{
-	SetControlRotation(NewRotation);
-}
-
-bool AMRRPlayerController::ClientSetControlRotation_Validate(FRotator NewRotation)
-{
-	return true;
-}
-
-void AMRRPlayerController::Kill()
-{
-	ServerKill();
-}
-
-void AMRRPlayerController::ServerKill_Implementation()
-{
-	AMRRPlayerState* PS = GetPlayerState<AMRRPlayerState>();
-	if (PS)
-	{
-		PS->GetAttributeSet()->SetHealth(0.0f);
-	}
-}
-
-bool AMRRPlayerController::ServerKill_Validate()
-{
-	return true;
 }

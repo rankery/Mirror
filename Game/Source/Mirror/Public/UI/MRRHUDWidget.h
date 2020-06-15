@@ -1,33 +1,20 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "MRRHUDWidget.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class MIRROR_API UMRRHUDWidget : public UUserWidget
 {
 	GENERATED_BODY()
+	
 public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void ShowAbilityConfirmCancelText(bool ShowText);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void SetRespawnCountdown(float RespawnTimeRemaining);
-
-
-	/**
-	* Attribute setters
-	*/
-
-	/**
-	* Resources
-	*/
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void SetMaxHealth(float MaxHealth);
@@ -36,67 +23,35 @@ public:
 	void SetCurrentHealth(float CurrentHealth);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetHealthRegenRate(float HealthRegenRate);
-	
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void SetHealthPercentage(float HealthPercentage);
-	
-	/**
-	* Attack
-	*/
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetPhysicalDamageIncrease(float PhysicalDamageIncrease);
+	void SetHealthRegenRate(float HealthRegenRate);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetAttackSpeed(float AttackSpeed);
+	void SetMaxStamina(float MaxStamina);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetMagicalDamageIncrease(float MagicalDamageIncrease);
+	void SetCurrentStamina(float CurrentStamina);	
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetCastSpeed(float CastSpeed);
-
-	/**
-	* Defence
-	*/
+	void SetStaminaPercentage(float StaminaPercentage);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetPhysicalDamageReduction(float PhysicalDamageReduction);
+	void SetStaminaRegenRate(float StaminaRegenRate);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetMagicalDamageReduction(float MagicalDamageReduction);
-
-	/**
-	* Utility
-	*/
+	void SetMaxMana(float MaxMana);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetWeight(float Weight);
+	void SetCurrentMana(float CurrentMana);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetMaxWeight(float MaxWeight);
+	void SetManaPercentage(float ManaPercentage);
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void SetManaRegenRate(float ManaRegenRate);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void SetGold(int32 Gold);
-
-	/**
-	* Action
-	*/
-
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetMovementSpeed(float MovementSpeed);
-
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetTimeModifier(float TimeModifier);
-
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetGravityX(float GravityX);
-
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetGravityY(float GravityY);
-
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SetGravityZ(float GravityZ);
-
 };

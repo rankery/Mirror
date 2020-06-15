@@ -15,6 +15,7 @@ public:
 	AMirrorGameMode();
 
 	void HeroDied(AController* Controller);
+
 protected:
 	float RespawnDelay;
 

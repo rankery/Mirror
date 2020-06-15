@@ -1,6 +1,4 @@
-// Copyright (c) Improbable Worlds Ltd, All Rights Reserved
-
-#include "MirrorGameMode.h"
+#include "Mirror/MirrorGameMode.h"
 #include "Engine/World.h"
 #include "Characters/Heroes/MRRHeroCharacter.h"
 #include "Player/MRRPlayerController.h"
@@ -14,10 +12,10 @@ AMirrorGameMode::AMirrorGameMode()
 {
 	RespawnDelay = 5.0f;
 
-	HeroClass = StaticLoadClass(UObject::StaticClass(), nullptr, TEXT("/Game/Mirror/Characters/BP_HeroCharacter.BP_HeroCharacter_C"));
+	HeroClass = StaticLoadClass(UObject::StaticClass(), nullptr, TEXT("/Game/Mirror/Characters/Hero/BP_HeroCharacter.BP_HeroCharacter_C"));
 	if (!HeroClass)
 	{
-		UE_LOG(LogTemp, Error, TEXT("%s() Failed to find HeroClass. If it was moved, please update the reference location in C++."), *FString(__FUNCTION__));
+		UE_LOG(LogTemp, Error, TEXT("%s() Failed to find HeroClass. If it was moved, please update the reference location in C++."), TEXT(__FUNCTION__));
 	}
 }
 
@@ -58,11 +56,6 @@ void AMirrorGameMode::BeginPlay()
 			break;
 		}
 	}
-
-	if (!EnemySpawnPoint)
-	{
-		UE_LOG(LogTemp, Error, TEXT("%s EnemySpawnPoint is null."), *FString(__FUNCTION__));
-	}
 }
 
 void AMirrorGameMode::RespawnHero(AController* Controller)
@@ -81,12 +74,6 @@ void AMirrorGameMode::RespawnHero(AController* Controller)
 		Controller->UnPossess();
 		OldSpectatorPawn->Destroy();
 		Controller->Possess(Hero);
-
-		AMRRPlayerController* PC = Cast<AMRRPlayerController>(Controller);
-		if (PC)
-		{
-			PC->ClientSetControlRotation(PlayerStart->GetActorRotation());
-		}
 	}
 	else
 	{

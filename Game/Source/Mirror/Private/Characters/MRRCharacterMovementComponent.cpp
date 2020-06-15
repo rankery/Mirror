@@ -1,20 +1,16 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
-#include "MRRCharacterMovementComponent.h"
+	#include "Characters/MRRCharacterMovementComponent.h"
 #include "AbilitySystemComponent.h"
-#include "Characters/MRRCharacter.h"
+#include "Characters/MRRCharacterBase.h"
 #include "GameplayTagContainer.h"
 
 UMRRCharacterMovementComponent::UMRRCharacterMovementComponent()
 {
-	SlinkSpeedMultiplier = 0.7f;
+	SprintSpeedMultiplier = 1.4f;
 }
-
 
 float UMRRCharacterMovementComponent::GetMaxSpeed() const
 {
-	AMRRCharacter* Owner = Cast<AMRRCharacter>(GetOwner());
+	AMRRCharacterBase* Owner = Cast<AMRRCharacterBase>(GetOwner());
 	if (!Owner)
 	{
 		UE_LOG(LogTemp, Error, TEXT("%s() No Owner"), TEXT(__FUNCTION__));
@@ -31,25 +27,23 @@ float UMRRCharacterMovementComponent::GetMaxSpeed() const
 		return 0.0f;
 	}
 
-	if (RequestToStartSlinking)
+	if (RequestToStartSprinting)
 	{
-		return Owner->GetMovementSpeed() * SlinkSpeedMultiplier;
+		return Owner->GetMoveSpeed() * SprintSpeedMultiplier;
 	}
 
-	return Owner->GetMovementSpeed();
+	return Owner->GetMoveSpeed();
 }
 
 void UMRRCharacterMovementComponent::UpdateFromCompressedFlags(uint8 Flags)
 {
 	Super::UpdateFromCompressedFlags(Flags);
 
-	//The Flags parameter contains the compressed input flags that are stored in the saved move.
-	//UpdateFromCompressed flags simply copies the flags from the saved move into the movement component.
-	//It basically just resets the movement component to the state when the move was made so it can simulate from there.
-	RequestToStartSlinking = (Flags & FSavedMove_Character::FLAG_Custom_0) != 0;
+	RequestToStartSprinting = (Flags & FSavedMove_Character::FLAG_Custom_0) != 0;
+
 }
 
-FNetworkPredictionData_Client* UMRRCharacterMovementComponent::GetPredictionData_Client() const
+FNetworkPredictionData_Client * UMRRCharacterMovementComponent::GetPredictionData_Client() const
 {
 	check(PawnOwner != NULL);
 
@@ -65,28 +59,29 @@ FNetworkPredictionData_Client* UMRRCharacterMovementComponent::GetPredictionData
 	return ClientPredictionData;
 }
 
-void UMRRCharacterMovementComponent::StartSlinking()
+void UMRRCharacterMovementComponent::StartSprinting()
 {
-	RequestToStartSlinking = true;
+	RequestToStartSprinting = true;
 }
 
-void UMRRCharacterMovementComponent::StopSlinking()
+void UMRRCharacterMovementComponent::StopSprinting()
 {
-	RequestToStartSlinking = false;
+	RequestToStartSprinting = false;
 }
+
 
 void UMRRCharacterMovementComponent::FMRRSavedMove::Clear()
 {
 	Super::Clear();
 
-	SavedRequestToStartSlinking = false;
+	SavedRequestToStartSprinting = false;
 }
 
 uint8 UMRRCharacterMovementComponent::FMRRSavedMove::GetCompressedFlags() const
 {
 	uint8 Result = Super::GetCompressedFlags();
 
-	if (SavedRequestToStartSlinking)
+	if (SavedRequestToStartSprinting)
 	{
 		Result |= FLAG_Custom_0;
 	}
@@ -94,10 +89,10 @@ uint8 UMRRCharacterMovementComponent::FMRRSavedMove::GetCompressedFlags() const
 	return Result;
 }
 
-bool UMRRCharacterMovementComponent::FMRRSavedMove::CanCombineWith(const FSavedMovePtr& NewMove, ACharacter* Character, float MaxDelta) const
+bool UMRRCharacterMovementComponent::FMRRSavedMove::CanCombineWith(const FSavedMovePtr & NewMove, ACharacter * Character, float MaxDelta) const
 {
 	//Set which moves can be combined together. This will depend on the bit flags that are used.
-	if (SavedRequestToStartSlinking != ((FMRRSavedMove*)&NewMove)->SavedRequestToStartSlinking)
+	if (SavedRequestToStartSprinting != ((FMRRSavedMove*)&NewMove)->SavedRequestToStartSprinting)
 	{
 		return false;
 	}
@@ -105,18 +100,18 @@ bool UMRRCharacterMovementComponent::FMRRSavedMove::CanCombineWith(const FSavedM
 	return Super::CanCombineWith(NewMove, Character, MaxDelta);
 }
 
-void UMRRCharacterMovementComponent::FMRRSavedMove::SetMoveFor(ACharacter* Character, float InDeltaTime, FVector const& NewAccel, FNetworkPredictionData_Client_Character& ClientData)
+void UMRRCharacterMovementComponent::FMRRSavedMove::SetMoveFor(ACharacter * Character, float InDeltaTime, FVector const & NewAccel, FNetworkPredictionData_Client_Character & ClientData)
 {
 	Super::SetMoveFor(Character, InDeltaTime, NewAccel, ClientData);
 
 	UMRRCharacterMovementComponent* CharacterMovement = Cast<UMRRCharacterMovementComponent>(Character->GetCharacterMovement());
 	if (CharacterMovement)
 	{
-		SavedRequestToStartSlinking = CharacterMovement->RequestToStartSlinking;
+		SavedRequestToStartSprinting = CharacterMovement->RequestToStartSprinting;
 	}
 }
 
-void UMRRCharacterMovementComponent::FMRRSavedMove::PrepMoveFor(ACharacter* Character)
+void UMRRCharacterMovementComponent::FMRRSavedMove::PrepMoveFor(ACharacter * Character)
 {
 	Super::PrepMoveFor(Character);
 
@@ -126,7 +121,7 @@ void UMRRCharacterMovementComponent::FMRRSavedMove::PrepMoveFor(ACharacter* Char
 	}
 }
 
-UMRRCharacterMovementComponent::FMRRNetworkPredictionData_Client::FMRRNetworkPredictionData_Client(const UCharacterMovementComponent& ClientMovement)
+UMRRCharacterMovementComponent::FMRRNetworkPredictionData_Client::FMRRNetworkPredictionData_Client(const UCharacterMovementComponent & ClientMovement)
 	: Super(ClientMovement)
 {
 }

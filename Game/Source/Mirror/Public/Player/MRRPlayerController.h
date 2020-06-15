@@ -1,19 +1,16 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
-#include "Characters/MRRCharacter.h"
+#include "Characters/MRRCharacterBase.h"
 #include "MRRPlayerController.generated.h"
 
-/**
- * 
- */
+
 UCLASS()
 class MIRROR_API AMRRPlayerController : public APlayerController
 {
 	GENERATED_BODY()
+	
 public:
 	void CreateHUD();
 
@@ -23,20 +20,14 @@ public:
 	class UMRRHUDWidget* GetHUD();
 
 	UFUNCTION(Client, Reliable, WithValidation)
-	void ShowDamageNumber(float DamageAmount, AMRRCharacter* TargetCharacter);
-	void ShowDamageNumber_Implementation(float DamageAmount, AMRRCharacter* TargetCharacter);
-	bool ShowDamageNumber_Validate(float DamageAmount, AMRRCharacter* TargetCharacter);
+	void ShowDamageNumber(float DamageAmount, AMRRCharacterBase* TargetCharacter);
+	void ShowDamageNumber_Implementation(float DamageAmount, AMRRCharacterBase* TargetCharacter);
+	bool ShowDamageNumber_Validate(float DamageAmount, AMRRCharacterBase* TargetCharacter);
 
-	// Simple way to RPC to the client the countdown until they respawn from the GameMode. Will be latency amount of out sync with the Server.
 	UFUNCTION(Client, Reliable, WithValidation)
 	void SetRespawnCountdown(float RespawnTimeRemaining);
 	void SetRespawnCountdown_Implementation(float RespawnTimeRemaining);
 	bool SetRespawnCountdown_Validate(float RespawnTimeRemaining);
-
-	UFUNCTION(Client, Reliable, WithValidation)
-	void ClientSetControlRotation(FRotator NewRotation);
-	void ClientSetControlRotation_Implementation(FRotator NewRotation);
-	bool ClientSetControlRotation_Validate(FRotator NewRotation);
 
 protected:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Mirror|UI")
@@ -45,16 +36,7 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Mirror|UI")
 	class UMRRHUDWidget* UIHUDWidget;
 
-	// Server only
 	virtual void OnPossess(APawn* InPawn) override;
 
 	virtual void OnRep_PlayerState() override;
-
-	UFUNCTION(Exec)
-	void Kill();
-
-	UFUNCTION(Server, Reliable)
-	void ServerKill();
-	void ServerKill_Implementation();
-	bool ServerKill_Validate();
 };

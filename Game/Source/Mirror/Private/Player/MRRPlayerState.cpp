@@ -1,8 +1,5 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
-#include "MRRPlayerState.h"
-#include "Characters/Abilities/AttributeSets/MRRAttributeSet.h"
+#include "Player/MRRPlayerState.h"
+#include "Characters/Abilities/AttributeSets/MRRAttributeSetBase.h"
 #include "Characters/Abilities/MRRAbilitySystemComponent.h"
 #include "Characters/Heroes/MRRHeroCharacter.h"
 #include "Player/MRRPlayerController.h"
@@ -11,36 +8,26 @@
 
 AMRRPlayerState::AMRRPlayerState()
 {
-	// Create ability system component, and set it to be explicitly replicated
 	AbilitySystemComponent = CreateDefaultSubobject<UMRRAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
 	AbilitySystemComponent->SetIsReplicated(true);
 
-	// Mixed mode means we only are replicated the GEs to ourself, not the GEs to simulated proxies. If another GDPlayerState (Hero) receives a GE,
-	// we won't be told about it by the Server. Attributes, GameplayTags, and GameplayCues will still replicate to us.
 	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Mixed);
 
-	// Create the attribute set, this replicates by default
-	// Adding it as a subobject of the owning actor of an AbilitySystemComponent
-	// automatically registers the AttributeSet with the AbilitySystemComponent
-	AttributeSet = CreateDefaultSubobject<UMRRAttributeSet>(TEXT("AttributeSetBase"));
+	AttributeSetBase = CreateDefaultSubobject<UMRRAttributeSetBase>(TEXT("AttributeSetBase"));
 
-	// Set PlayerState's NetUpdateFrequency to the same as the Character.
-	// Default is very low for PlayerStates and introduces perceived lag in the ability system.
-	// 100 is probably way too high for a shipping game, you can adjust to fit your needs.
 	NetUpdateFrequency = 100.0f;
 
-	// Cache tags
 	DeadTag = FGameplayTag::RequestGameplayTag(FName("State.Dead"));
 }
 
-UAbilitySystemComponent* AMRRPlayerState::GetAbilitySystemComponent() const
+UAbilitySystemComponent * AMRRPlayerState::GetAbilitySystemComponent() const
 {
 	return AbilitySystemComponent;
 }
 
-UMRRAttributeSet* AMRRPlayerState::GetAttributeSet() const
+UMRRAttributeSetBase * AMRRPlayerState::GetAttributeSetBase() const
 {
-	return AttributeSet;
+	return AttributeSetBase;
 }
 
 bool AMRRPlayerState::IsAlive() const
@@ -61,109 +48,59 @@ void AMRRPlayerState::ShowAbilityConfirmCancelText(bool ShowText)
 	}
 }
 
-/**
-* Resources
-*/
-
 float AMRRPlayerState::GetHealth() const
 {
-	return AttributeSet->GetHealth();
+	return AttributeSetBase->GetHealth();
 }
 
 float AMRRPlayerState::GetMaxHealth() const
 {
-	return AttributeSet->GetMaxHealth();
+	return AttributeSetBase->GetMaxHealth();
 }
 
 float AMRRPlayerState::GetHealthRegenRate() const
 {
-	return AttributeSet->GetHealthRegenRate();
+	return AttributeSetBase->GetHealthRegenRate();
 }
 
-/**
-* Attack
-*/
-
-float AMRRPlayerState::GetOutgoingPhysicalDamageMultiplier() const
+float AMRRPlayerState::GetMana() const
 {
-	return AttributeSet->GetOutgoingPhysicalDamageMultiplier();
+	return AttributeSetBase->GetMana();
 }
 
-float AMRRPlayerState::GetAttackSpeed() const
+float AMRRPlayerState::GetMaxMana() const
 {
-	return AttributeSet->GetAttackSpeed();
+	return AttributeSetBase->GetMaxMana();
 }
 
-float AMRRPlayerState::GetOutgoingMagicalDamageMultiplier() const
+float AMRRPlayerState::GetManaRegenRate() const
 {
-	return AttributeSet->GetOutgoingMagicalDamageMultiplier();
+	return AttributeSetBase->GetManaRegenRate();
 }
 
-float AMRRPlayerState::GetCastSpeed() const
+float AMRRPlayerState::GetStamina() const
 {
-	return AttributeSet->GetCastSpeed();
+	return AttributeSetBase->GetStamina();
 }
 
-/**
-* Defence
-*/
-
-float AMRRPlayerState::GetIncomingPhysicalDamageMultiplier() const
+float AMRRPlayerState::GetMaxStamina() const
 {
-	return AttributeSet->GetIncomingPhysicalDamageMultiplier();
+	return AttributeSetBase->GetMaxStamina();
 }
 
-float AMRRPlayerState::GetIncomingMagicalDamageMultiplier() const
+float AMRRPlayerState::GetStaminaRegenRate() const
 {
-	return AttributeSet->GetIncomingMagicalDamageMultiplier();
+	return AttributeSetBase->GetStaminaRegenRate();
 }
 
-/**
-* Utility
-*/
-
-float AMRRPlayerState::GetWeight() const
+float AMRRPlayerState::GetMoveSpeed() const
 {
-	return AttributeSet->GetWeight();
-}
-
-float AMRRPlayerState::GetMaxWeight() const
-{
-	return AttributeSet->GetMaxWeight();
+	return AttributeSetBase->GetMoveSpeed();
 }
 
 int32 AMRRPlayerState::GetGold() const
 {
-	return AttributeSet->GetGold();
-}
-
-/**
-* Action
-*/
-
-float AMRRPlayerState::GetMovementSpeed() const
-{
-	return AttributeSet->GetMovementSpeed();
-}
-
-float AMRRPlayerState::GetTimeModifier() const
-{
-	return AttributeSet->GetTimeModifier();
-}
-
-float AMRRPlayerState::GetGravityX() const
-{
-	return AttributeSet->GetGravityX();
-}
-
-float AMRRPlayerState::GetGravityY() const
-{
-	return AttributeSet->GetGravityY();
-}
-
-float AMRRPlayerState::GetGravityZ() const
-{
-	return AttributeSet->GetGravityZ();
+	return AttributeSetBase->GetGold();
 }
 
 void AMRRPlayerState::BeginPlay()
@@ -172,54 +109,35 @@ void AMRRPlayerState::BeginPlay()
 
 	if (AbilitySystemComponent)
 	{
-		// Attribute change callbacks
-		HealthChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetHealthAttribute()).AddUObject(this, &AMRRPlayerState::HealthChanged);
-		MaxHealthChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetMaxHealthAttribute()).AddUObject(this, &AMRRPlayerState::MaxHealthChanged);
-		HealthRegenRateChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetHealthRegenRateAttribute()).AddUObject(this, &AMRRPlayerState::HealthRegenRateChanged);
-		
-		OutgoingPhysicalDamageMultiplierChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetOutgoingPhysicalDamageMultiplierAttribute()).AddUObject(this, &AMRRPlayerState::OutgoingPhysicalDamageMultiplierChanged);
-		AttackSpeedChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetAttackSpeedAttribute()).AddUObject(this, &AMRRPlayerState::AttackSpeedChanged);
-		OutgoingMagicalDamageMultiplierChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetOutgoingMagicalDamageMultiplierAttribute()).AddUObject(this, &AMRRPlayerState::OutgoingMagicalDamageMultiplierChanged);
-		CastSpeedChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetCastSpeedAttribute()).AddUObject(this, &AMRRPlayerState::CastSpeedChanged);
-		
-		IncomingPhysicalDamageMultiplierChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetIncomingPhysicalDamageMultiplierAttribute()).AddUObject(this, &AMRRPlayerState::IncomingPhysicalDamageMultiplierChanged);
-		IncomingMagicalDamageMultiplierChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetIncomingMagicalDamageMultiplierAttribute()).AddUObject(this, &AMRRPlayerState::IncomingMagicalDamageMultiplierChanged);
-		
-		WeightChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetWeightAttribute()).AddUObject(this, &AMRRPlayerState::WeightChanged);
-		MaxWeightChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetMaxWeightAttribute()).AddUObject(this, &AMRRPlayerState::MaxWeightChanged);
-		GoldChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetGoldAttribute()).AddUObject(this, &AMRRPlayerState::GoldChanged);
+		HealthChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSetBase->GetHealthAttribute()).AddUObject(this, &AMRRPlayerState::HealthChanged);
+		MaxHealthChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSetBase->GetMaxHealthAttribute()).AddUObject(this, &AMRRPlayerState::MaxHealthChanged);
+		HealthRegenRateChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSetBase->GetHealthRegenRateAttribute()).AddUObject(this, &AMRRPlayerState::HealthRegenRateChanged);
+		ManaChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSetBase->GetManaAttribute()).AddUObject(this, &AMRRPlayerState::ManaChanged);
+		MaxManaChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSetBase->GetMaxManaAttribute()).AddUObject(this, &AMRRPlayerState::MaxManaChanged);
+		ManaRegenRateChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSetBase->GetManaRegenRateAttribute()).AddUObject(this, &AMRRPlayerState::ManaRegenRateChanged);
+		StaminaChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSetBase->GetStaminaAttribute()).AddUObject(this, &AMRRPlayerState::StaminaChanged);
+		MaxStaminaChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSetBase->GetMaxStaminaAttribute()).AddUObject(this, &AMRRPlayerState::MaxStaminaChanged);
+		StaminaRegenRateChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSetBase->GetStaminaRegenRateAttribute()).AddUObject(this, &AMRRPlayerState::StaminaRegenRateChanged);
+		GoldChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSetBase->GetGoldAttribute()).AddUObject(this, &AMRRPlayerState::GoldChanged);
 
-		MovementSpeedChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetMovementSpeedAttribute()).AddUObject(this, &AMRRPlayerState::MovementSpeedChanged);
-		TimeModifierChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetTimeModifierAttribute()).AddUObject(this, &AMRRPlayerState::TimeModifierChanged);
-		GravityXChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetGravityXAttribute()).AddUObject(this, &AMRRPlayerState::GravityXChanged);
-		GravityYChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetGravityYAttribute()).AddUObject(this, &AMRRPlayerState::GravityYChanged);
-		GravityZChangedDelegateHandle = AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetGravityZAttribute()).AddUObject(this, &AMRRPlayerState::GravityZChanged);
-
-
-		// Tag change callbacks
 		AbilitySystemComponent->RegisterGameplayTagEvent(FGameplayTag::RequestGameplayTag(FName("State.Debuff.Stun")), EGameplayTagEventType::NewOrRemoved).AddUObject(this, &AMRRPlayerState::StunTagChanged);
 	}
 }
 
-void AMRRPlayerState::HealthChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::HealthChanged(const FOnAttributeChangeData & Data)
 {
 	float Health = Data.NewValue;
 
-	// Update floating status bar
 	AMRRHeroCharacter* Hero = Cast<AMRRHeroCharacter>(GetPawn());
 	if (Hero)
 	{
 		UMRRFloatingStatusBarWidget* HeroFloatingStatusBar = Hero->GetFloatingStatusBar();
 		if (HeroFloatingStatusBar)
 		{
-			 HeroFloatingStatusBar->SetHealthPercentage(Health / GetMaxHealth());
+			HeroFloatingStatusBar->SetHealthPercentage(Health / GetMaxHealth());
 		}
 	}
 
-	// Update the HUD
-	// Handled in the UI itself using the AsyncTaskAttributeChanged node as an example how to do it in Blueprint
-
-	// If the player died, handle death
 	if (!IsAlive() && !AbilitySystemComponent->HasMatchingGameplayTag(DeadTag))
 	{
 		if (Hero)
@@ -229,22 +147,20 @@ void AMRRPlayerState::HealthChanged(const FOnAttributeChangeData& Data)
 	}
 }
 
-void AMRRPlayerState::MaxHealthChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::MaxHealthChanged(const FOnAttributeChangeData & Data)
 {
 	float MaxHealth = Data.NewValue;
 
-	// Update floating status bar
 	AMRRHeroCharacter* Hero = Cast<AMRRHeroCharacter>(GetPawn());
 	if (Hero)
 	{
 		UMRRFloatingStatusBarWidget* HeroFloatingStatusBar = Hero->GetFloatingStatusBar();
 		if (HeroFloatingStatusBar)
 		{
-			 HeroFloatingStatusBar->SetHealthPercentage(GetHealth() / MaxHealth);
+			HeroFloatingStatusBar->SetHealthPercentage(GetHealth() / MaxHealth);
 		}
 	}
 
-	// Update the HUD
 	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
 	if (PC)
 	{
@@ -256,11 +172,10 @@ void AMRRPlayerState::MaxHealthChanged(const FOnAttributeChangeData& Data)
 	}
 }
 
-void AMRRPlayerState::HealthRegenRateChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::HealthRegenRateChanged(const FOnAttributeChangeData & Data)
 {
 	float HealthRegenRate = Data.NewValue;
 
-	// Update the HUD
 	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
 	if (PC)
 	{
@@ -272,139 +187,102 @@ void AMRRPlayerState::HealthRegenRateChanged(const FOnAttributeChangeData& Data)
 	}
 }
 
-void AMRRPlayerState::OutgoingPhysicalDamageMultiplierChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::ManaChanged(const FOnAttributeChangeData & Data)
 {
-	float PhysicalDamageIncrease = Data.NewValue;
+	float Mana = Data.NewValue;
 
-	// Update the HUD
+	AMRRHeroCharacter* Hero = Cast<AMRRHeroCharacter>(GetPawn());
+	if (Hero)
+	{
+		UMRRFloatingStatusBarWidget* HeroFloatingStatusBar = Hero->GetFloatingStatusBar();
+		if (HeroFloatingStatusBar)
+		{
+			HeroFloatingStatusBar->SetManaPercentage(Mana / GetMaxMana());
+		}
+	}
+
+}
+
+void AMRRPlayerState::MaxManaChanged(const FOnAttributeChangeData & Data)
+{
+	float MaxMana = Data.NewValue;
+
+	AMRRHeroCharacter* Hero = Cast<AMRRHeroCharacter>(GetPawn());
+	if (Hero)
+	{
+		UMRRFloatingStatusBarWidget* HeroFloatingStatusBar = Hero->GetFloatingStatusBar();
+		if (HeroFloatingStatusBar)
+		{
+			HeroFloatingStatusBar->SetManaPercentage(GetMana() / MaxMana);
+		}
+	}
+
 	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
 	if (PC)
 	{
 		UMRRHUDWidget* HUD = PC->GetHUD();
 		if (HUD)
 		{
-			HUD->SetPhysicalDamageIncrease(PhysicalDamageIncrease);
+			HUD->SetMaxMana(MaxMana);
 		}
 	}
 }
 
-void AMRRPlayerState::AttackSpeedChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::ManaRegenRateChanged(const FOnAttributeChangeData & Data)
 {
-	float AttackSpeed = Data.NewValue;
+	float ManaRegenRate = Data.NewValue;
 
-	// Update the HUD
 	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
 	if (PC)
 	{
 		UMRRHUDWidget* HUD = PC->GetHUD();
 		if (HUD)
 		{
-			HUD->SetAttackSpeed(AttackSpeed);
+			HUD->SetManaRegenRate(ManaRegenRate);
 		}
 	}
 }
 
-void AMRRPlayerState::OutgoingMagicalDamageMultiplierChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::StaminaChanged(const FOnAttributeChangeData & Data)
 {
-	float MagicalDamageIncrease = Data.NewValue;
+	float Stamina = Data.NewValue;
 
-	// Update the HUD
+}
+
+void AMRRPlayerState::MaxStaminaChanged(const FOnAttributeChangeData & Data)
+{
+	float MaxStamina = Data.NewValue;
+
 	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
 	if (PC)
 	{
 		UMRRHUDWidget* HUD = PC->GetHUD();
 		if (HUD)
 		{
-			HUD->SetMagicalDamageIncrease(MagicalDamageIncrease);
+			HUD->SetMaxStamina(MaxStamina);
 		}
 	}
 }
 
-void AMRRPlayerState::CastSpeedChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::StaminaRegenRateChanged(const FOnAttributeChangeData & Data)
 {
-	float CastSpeed = Data.NewValue;
+	float StaminaRegenRate = Data.NewValue;
 
-	// Update the HUD
 	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
 	if (PC)
 	{
 		UMRRHUDWidget* HUD = PC->GetHUD();
 		if (HUD)
 		{
-			HUD->SetCastSpeed(CastSpeed);
+			HUD->SetStaminaRegenRate(StaminaRegenRate);
 		}
 	}
 }
 
-void AMRRPlayerState::IncomingPhysicalDamageMultiplierChanged(const FOnAttributeChangeData& Data)
-{
-	float PhysicalDamageReduction = Data.NewValue;
-
-	// Update the HUD
-	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
-	if (PC)
-	{
-		UMRRHUDWidget* HUD = PC->GetHUD();
-		if (HUD)
-		{
-			HUD->SetPhysicalDamageReduction(PhysicalDamageReduction);
-		}
-	}
-}
-
-void AMRRPlayerState::IncomingMagicalDamageMultiplierChanged(const FOnAttributeChangeData& Data)
-{
-	float MagicalDamageReduction = Data.NewValue;
-
-	// Update the HUD
-	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
-	if (PC)
-	{
-		UMRRHUDWidget* HUD = PC->GetHUD();
-		if (HUD)
-		{
-			HUD->SetMagicalDamageReduction(MagicalDamageReduction);
-		}
-	}
-}
-
-void AMRRPlayerState::WeightChanged(const FOnAttributeChangeData& Data)
-{
-	float Weight = Data.NewValue;
-
-	// Update the HUD
-	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
-	if (PC)
-	{
-		UMRRHUDWidget* HUD = PC->GetHUD();
-		if (HUD)
-		{
-			HUD->SetWeight(Weight);
-		}
-	}
-}
-
-void AMRRPlayerState::MaxWeightChanged(const FOnAttributeChangeData& Data)
-{
-	float MaxWeight = Data.NewValue;
-
-	// Update the HUD
-	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
-	if (PC)
-	{
-		UMRRHUDWidget* HUD = PC->GetHUD();
-		if (HUD)
-		{
-			HUD->SetMaxWeight(MaxWeight);
-		}
-	}
-}
-
-void AMRRPlayerState::GoldChanged(const FOnAttributeChangeData& Data)
+void AMRRPlayerState::GoldChanged(const FOnAttributeChangeData & Data)
 {
 	float Gold = Data.NewValue;
 
-	// Update the HUD
 	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
 	if (PC)
 	{
@@ -412,86 +290,6 @@ void AMRRPlayerState::GoldChanged(const FOnAttributeChangeData& Data)
 		if (HUD)
 		{
 			HUD->SetGold(Gold);
-		}
-	}
-}
-
-void AMRRPlayerState::MovementSpeedChanged(const FOnAttributeChangeData& Data)
-{
-	float MovementSpeed = Data.NewValue;
-
-	// Update the HUD
-	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
-	if (PC)
-	{
-		UMRRHUDWidget* HUD = PC->GetHUD();
-		if (HUD)
-		{
-			HUD->SetMovementSpeed(MovementSpeed);
-		}
-	}
-}
-
-void AMRRPlayerState::TimeModifierChanged(const FOnAttributeChangeData& Data)
-{
-	float TimeModifier = Data.NewValue;
-
-	// Update the HUD
-	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
-	if (PC)
-	{
-		UMRRHUDWidget* HUD = PC->GetHUD();
-		if (HUD)
-		{
-			HUD->SetTimeModifier(TimeModifier);
-		}
-	}
-}
-
-void AMRRPlayerState::GravityXChanged(const FOnAttributeChangeData& Data)
-{
-	float GravityX = Data.NewValue;
-
-	// Update the HUD
-	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
-	if (PC)
-	{
-		UMRRHUDWidget* HUD = PC->GetHUD();
-		if (HUD)
-		{
-			HUD->SetGravityX(GravityX);
-		}
-	}
-}
-
-void AMRRPlayerState::GravityYChanged(const FOnAttributeChangeData& Data)
-{
-	float GravityY = Data.NewValue;
-
-	// Update the HUD
-	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
-	if (PC)
-	{
-		UMRRHUDWidget* HUD = PC->GetHUD();
-		if (HUD)
-		{
-			HUD->SetGravityY(GravityY);
-		}
-	}
-}
-
-void AMRRPlayerState::GravityZChanged(const FOnAttributeChangeData& Data)
-{
-	float GravityZ = Data.NewValue;
-
-	// Update the HUD
-	AMRRPlayerController* PC = Cast<AMRRPlayerController>(GetOwner());
-	if (PC)
-	{
-		UMRRHUDWidget* HUD = PC->GetHUD();
-		if (HUD)
-		{
-			HUD->SetGravityZ(GravityZ);
 		}
 	}
 }
